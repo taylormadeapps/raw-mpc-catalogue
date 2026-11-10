@@ -50,8 +50,8 @@
           <li><strong>RAW MPC USB Creator Alpha 4</strong> on an <a href="#prepare-usb">Apple silicon Mac running macOS 13 or later</a> or a <a href="#prepare-windows">Windows 10 or 11 x64 PC</a>.</li>
           <li><strong>A FAT32 USB stick.</strong> You can use one that already has projects or samples on it.</li>
         </ul>
-        <p><strong>Verified with RAW.</strong> We installed and opened the loader on an <strong>MPC One+ running MPC OS 3.9</strong>. Other models and OS versions still need testing with RAW.</p>
-        <p>To check your MPC OS version, open <strong>Menu → Preferences → Info</strong> on the MPC. If it meets the requirements above, go straight to <a href="#prepare-usb">making the stick</a>. If you need 3.9.0, see <a href="#akai-firmware">Akai’s firmware updater</a>.</p>
+        <p><strong>Verified with RAW.</strong> On an <strong>MPC One+ running MPC OS 3.9.0</strong>, we installed and opened the loader and added a plugin from a catalogue. Other models and OS versions still need testing with RAW.</p>
+        <p>To check your MPC OS version, open <strong>Menu → Preferences → Info</strong> on the MPC. If it meets the requirements above, go straight to <a href="#prepare-usb">making the stick</a>. If you’re on MPC OS 3.10, follow the <a href="#install-from-3-10">recommended install route</a>. See <a href="#akai-firmware">Akai firmware downloads</a> for links to specific versions.</p>
       </section>
 
       <section class="guide-section" id="prepare-usb" aria-labelledby="prepare-title">
@@ -130,22 +130,49 @@
       </section>
 
       <section class="guide-section" id="akai-firmware" aria-labelledby="firmware-title">
-        <h2 id="firmware-title">Akai’s firmware updater</h2>
-        <p>To install 3.9.0 on a Gen 1 MPC, get Akai’s <strong>3.9.0 Gen 1</strong> updater for your computer.</p>
+        <h2 id="firmware-title">Akai firmware downloads</h2>
+        <p>These downloads are for <strong>Gen 1 MPCs</strong>, including the MPC One+.</p>
+
+        <h3 id="install-from-3-10">Recommended route from MPC OS 3.10</h3>
+        <p><a href="https://open-mpc.github.io/install.html#mpc-os-3-10-beta">Open MPC recommends this firmware sequence</a> for its Plugin Manager. RAW operation after returning to 3.10 still needs hardware verification.</p>
+        <ol>
+          <li>Back up your projects, samples and settings to a separate drive. Use Akai’s updater to downgrade to <a href="#firmware-3-9-1">MPC OS 3.9.1</a>.</li>
+          <li>Make a RAW installer stick on <a href="#prepare-usb">Mac</a> or <a href="#prepare-windows">Windows</a>. While the MPC is on 3.9.1, <a href="#install-loader">install and open the RAW MPC Plugin Loader</a>.</li>
+          <li>Use Akai’s updater to return to <a href="#firmware-3-10-0">MPC OS 3.10.0</a>, then check that the loader opens.</li>
+        </ol>
+
+        <h3>MPC OS 3.9.0</h3>
         <ul>
           <li><a href="https://cdn.inmusicbrands.com/Software/15JM26PSBC/MPC%20%28Gen%201%29%203.9.0%20Updater.app.zip">Download Akai’s 3.9.0 updater for Mac</a></li>
           <li><a href="https://cdn.inmusicbrands.com/Software/15JM26PSBC/MPC%20%28Gen%201%29%203.9.0%20Updater.exe">Download Akai’s 3.9.0 updater for Windows</a></li>
+          <li><a href="https://cdn.inmusicbrands.com/Software/15JM26PSBC/MPC-3.9.0-Gen1-update.img">Download Akai’s 3.9.0 USB image</a></li>
         </ul>
-        <p>For other versions, look under <strong>Legacy MPC Firmware (Gen 1)</strong> in <a href="https://www.akaipro.com/downloads-and-support/downloads/?legacy=true">Akai’s Legacy Downloads</a>.</p>
-        <h3>Run the updater</h3>
+
+        <h3 id="firmware-3-9-1">MPC OS 3.9.1</h3>
+        <ul>
+          <li><a href="https://cdn.inmusicbrands.com/Software/MPC/MVSU391APC/MPC%20%28Gen%201%29%203.9.1%20Updater.app.zip">Download Akai’s 3.9.1 updater for Mac</a></li>
+          <li><a href="https://cdn.inmusicbrands.com/Software/MPC/MVSU391APC/MPC%20%28Gen%201%29%203.9.1%20Updater.exe">Download Akai’s 3.9.1 updater for Windows</a></li>
+          <li><a href="https://cdn.inmusicbrands.com/Software/MPC/MVSU391APC/MPC-3.9.1-Gen1-update.img">Download Akai’s 3.9.1 USB image</a></li>
+        </ul>
+
+        <h3 id="firmware-3-10-0">MPC OS 3.10.0</h3>
+        <ul>
+          <li><a href="https://cdn.inmusicbrands.com/Software/M310PCFIN26OCT/MPC%20%28Gen%201%29%203.10.0%20Updater.app.zip">Download Akai’s 3.10.0 updater for Mac</a></li>
+          <li><a href="https://cdn.inmusicbrands.com/Software/M310PCFIN26OCT/MPC%20%28Gen%201%29%203.10.0%20Updater.exe">Download Akai’s 3.10.0 updater for Windows</a></li>
+          <li><a href="https://cdn.inmusicbrands.com/Software/M310PCFIN26OCT/MPC-3.10.0-Gen1-update.img">Download Akai’s 3.10.0 USB image</a></li>
+        </ul>
+
+        <h3>Run a desktop updater</h3>
         <ol>
           <li>Back up your projects and samples to a separate drive. Plug the MPC into power and connect it directly to your computer with a USB cable.</li>
           <li>Open the Akai updater you downloaded. On a Mac, open the ZIP first if it hasn’t already been unpacked.</li>
           <li>On the MPC, go to <strong>Menu → Preferences → Info</strong>. Tap <strong>Update</strong>, then <strong>Switch to Update Mode</strong>.</li>
           <li>When the MPC is in Update Mode, click <strong>Update MPC</strong> in Akai’s updater on your computer. Keep the USB cable and power connected while it runs.</li>
-          <li>When the MPC starts up again, go back to <strong>Menu → Preferences → Info</strong> and check that it shows <strong>3.9.0</strong>.</li>
+          <li>When the MPC starts up again, go back to <strong>Menu → Preferences → Info</strong> and check that it shows the version you selected.</li>
         </ol>
-        <p>If the updater won’t run or the MPC doesn’t enter Update Mode, see <a href="https://support.akaipro.com/en/support/solutions/articles/69000816160-akai-pro-mpc-series-firmware-update-walkthrough">Akai’s official walkthrough</a>.</p>
+        <p>If the updater won’t run or the MPC doesn’t enter Update Mode, see <a href="https://support.akaipro.com/en/support/solutions/articles/69000816160-akai-pro-mpc-firmware-update-walkthrough#Updating-with-PC-or-Mac">Akai’s desktop firmware update instructions</a>.</p>
+        <p>For a USB update, the MPC’s USB updater reads the <code>.img</code> file directly. See <a href="https://support.akaipro.com/en/support/solutions/articles/69000816160-akai-pro-mpc-firmware-update-walkthrough#Updating-with-a-USB-Drive">Akai’s USB firmware update instructions</a>.</p>
+        <p>For other versions, look under <strong>Legacy MPC Firmware (Gen 1)</strong> in <a href="https://www.akaipro.com/downloads-and-support/downloads/?legacy=true">Akai’s Legacy Downloads</a>.</p>
       </section>
     </div>
   </main>
