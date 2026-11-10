@@ -147,7 +147,7 @@ nav a[aria-current="page"] { color: var(--accent); }
   grid-template-columns: minmax(0, 1fr) auto;
   align-items: center;
   gap: 1rem 2rem;
-  max-width: 40rem;
+  max-width: 52rem;
   margin-inline: auto;
   text-decoration: none;
 }
@@ -272,6 +272,13 @@ nav a[aria-current="page"] { color: var(--accent); }
 .footer-copy { margin-top: 1rem; color: var(--muted); font-size: 0.8rem; }
 .footer-copy a { text-decoration-color: var(--accent); text-underline-offset: 0.2em; }
 
+@media (max-width: 52rem) {
+  .taype-promo-link {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 28rem;
+  }
+}
+
 @media (max-width: 48rem) {
   .guide {
     grid-template-columns: minmax(0, 1fr);
@@ -287,6 +294,5 @@ nav a[aria-current="page"] { color: var(--accent); }
   .release, .acknowledgement { grid-template-columns: minmax(0, 1fr); }
   .acknowledgement > div { grid-column: auto; }
   .release-status { text-align: left; }
-  .taype-promo-link { grid-template-columns: minmax(0, 1fr); }
   .community-grid { grid-template-columns: minmax(0, 1fr); }
 }
