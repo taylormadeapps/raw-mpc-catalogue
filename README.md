@@ -9,13 +9,13 @@ Get Ruminant Audio Works plugins on your standalone MPC. Set up the loader once,
 ## What you’ll need
 
 - A **first-generation standalone MPC**. Akai lists the MPC One, One+, Live, Live II, X, X SE, Key 37 and Key 61 in its [Gen 1 range](https://www.akaipro.com/downloads-and-support/downloads/?legacy=true).
-- **MPC OS 3 with the original USB install prompt**. [Open MPC documents this USB method through MPC OS 3.9.1](https://github.com/open-mpc/mpc-vst-plugins/blob/main/docs/USB_STICK.md#how-the-route-works).
+- **MPC OS 3 through 3.9.1, with the original USB install prompt.**
 - **RAW MPC USB Creator Alpha 4** on an **Apple silicon Mac running macOS 13 or later** or a **Windows 10 or 11 x64 PC**.
 - A **FAT32 USB stick**. You can use one that already has projects or samples on it.
 
-**Verified with RAW.** On an **MPC One+ running MPC OS 3.9.0**, we installed and opened the loader and added a plugin from a catalogue. Other models and OS versions still need testing with RAW.
+Check your MPC OS version under **Menu → Preferences → Info**. If your MPC meets the requirements above, make the installer stick on [Mac](#on-your-mac) or [Windows](#on-windows).
 
-Check the version on your MPC under **Menu → Preferences → Info**. If it meets the requirements above, go straight to [On your Mac](#on-your-mac) or [On Windows](#on-windows). If you’re on MPC OS 3.10, follow the [recommended install route](#recommended-route-from-mpc-os-310). See [Akai firmware downloads](#akai-firmware-updater) for links to specific versions.
+**Verified with RAW.** On an **MPC One+ running MPC OS 3.9.0**, we installed and opened the loader and added a plugin from a catalogue. We also tested the loader on **MPC OS 3.9.1**. An existing loader installation still worked after returning to **MPC OS 3.10**.
 
 ## On your Mac
 
@@ -59,15 +59,9 @@ If the install prompt or a plugin is missing, see [If you get stuck](https://mpc
 
 ## Akai firmware updater
 
-These downloads are for **Gen 1 MPCs**, including the MPC One+.
+Akai provides these firmware downloads for general maintenance of **Gen 1 MPCs**, including the MPC One+.
 
-### Recommended route from MPC OS 3.10
-
-[Open MPC recommends this firmware sequence](https://open-mpc.github.io/install.html#mpc-os-3-10-beta) for its Plugin Manager. RAW operation after returning to 3.10 still needs hardware verification.
-
-1. Back up your projects, samples and settings to a separate drive. Use Akai’s updater to downgrade to [MPC OS 3.9.1](#mpc-os-391).
-2. Make a RAW installer stick on [Mac](#on-your-mac) or [Windows](#on-windows). While the MPC is on 3.9.1, [install and open the RAW MPC Plugin Loader](#on-your-mpc).
-3. Use Akai’s updater to return to [MPC OS 3.10.0](#mpc-os-3100), then check that the loader opens.
+MPC firmware updates normally leave your projects and samples in place. As a precaution, back them up to a separate drive before updating.
 
 ### MPC OS 3.9.0
 
@@ -89,7 +83,7 @@ These downloads are for **Gen 1 MPCs**, including the MPC One+.
 
 ### Run a desktop updater
 
-1. Back up your projects and samples to a separate drive. Plug the MPC into power and connect it directly to your computer with a USB cable.
+1. Plug the MPC into power and connect it directly to your computer with a USB cable.
 2. Open the Akai updater you downloaded. On a Mac, open the ZIP first if it hasn’t already been unpacked.
 3. On the MPC, go to **Menu → Preferences → Info → Update → Switch to Update Mode**.
 4. Once the MPC is in Update Mode, click **Update MPC** in the Akai updater on your computer. Keep the USB cable and power connected while it runs.
