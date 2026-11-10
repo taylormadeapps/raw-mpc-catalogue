@@ -3,22 +3,23 @@
 Get Ruminant Audio Works plugins on your standalone MPC. Set up the loader once, then use it to add plugins from your MPC.
 
 - [Read the full setup guide](https://mpc.ruminantaudioworks.com/docs/)
-- [Download RAW MPC USB Creator for Mac · Alpha 1](https://github.com/taylormadeapps/raw-mpc-catalogue/releases/tag/usb-creator-v0.1.0-alpha.1)
+- [Download RAW MPC USB Creator for Mac · Alpha 2](https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/usb-creator-v0.1.0-alpha.2/RAW-MPC-USB-Creator-0.1.0-alpha.2-macOS-arm64.pkg)
+- [Download RAW MPC USB Creator for Windows x64 · Alpha 2](https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/usb-creator-v0.1.0-alpha.2/RAW-MPC-USB-Creator-0.1.0-alpha.2-windows-x64.zip)
 
 ## What you’ll need
 
 - A **first-generation standalone MPC**. Akai lists the MPC One, One+, Live, Live II, X, X SE, Key 37 and Key 61 in its [Gen 1 range](https://www.akaipro.com/downloads-and-support/downloads/?legacy=true).
 - **MPC OS 3 with the original USB install prompt**. [Open MPC documents this USB method through MPC OS 3.9.1](https://github.com/open-mpc/mpc-vst-plugins/blob/main/docs/USB_STICK.md#how-the-route-works).
-- **RAW MPC USB Creator Alpha 1** on an **Apple silicon Mac running macOS 13 or later**. A [Windows version](#on-windows) is planned.
+- **RAW MPC USB Creator Alpha 2** on an **Apple silicon Mac running macOS 13 or later** or a **Windows 10 or 11 x64 PC**.
 - A **FAT32 USB stick**. You can use one that already has projects or samples on it.
 
 **Verified with RAW:** We installed and opened the loader on an **MPC One+ running MPC OS 3.9**. Other models and OS versions still need testing with RAW.
 
-Check the version on your MPC under **Menu → Preferences → Info**. If it meets the requirements above, go straight to [On your Mac](#on-your-mac). If you need 3.9.0, see [Akai’s firmware updater](#akai-firmware-updater).
+Check the version on your MPC under **Menu → Preferences → Info**. If it meets the requirements above, go straight to [On your Mac](#on-your-mac) or [On Windows](#on-windows). If you need 3.9.0, see [Akai’s firmware updater](#akai-firmware-updater).
 
 ## On your Mac
 
-This is an early alpha. Back up your projects, samples and settings before trying it. Download the `.pkg` from the release page and open it to install the app. The installer includes the warranty notice.
+This is an early alpha. Back up your projects, samples and settings before trying it. Open the signed and notarised `.pkg` to install the app. The installer includes the warranty notice.
 
 1. Plug in the stick and open **RAW MPC USB Creator**. You can leave the plugin list empty for your first install. If you already have a plugin download for Gen 1 MPC hardware, use **Add Packages…** and pick the ZIP or the whole plugin folder.
 2. Click **Choose USB…**, pick the stick by name, then click **Write USB…** and confirm. USB Creator replaces any folder called `autorun`. Move that folder off the stick first if you want to keep it.
@@ -26,26 +27,32 @@ This is an early alpha. Back up your projects, samples and settings before tryin
 
 ## On Windows
 
-**Planned.** The Windows version of RAW MPC USB Creator will make the installer stick from a Windows PC. The download and setup steps will go here when it’s ready.
+Extract the whole Windows ZIP and run **RAW MPC USB Creator.exe** from the extracted folder. Keep the files together. This alpha is unsigned and includes a warranty notice.
+
+1. Plug in a FAT32 USB stick. To bundle plugins, use **Add ZIPs…** or **Add Folder…**. Use the original ZIP if a plugin includes executable files.
+2. Click **Choose USB…** and select the drive itself under **This PC**. Click **Write USB…** and confirm. USB Creator replaces the `autorun` folder on the selected drive.
+3. Wait for **USB ready**, then eject the stick in Windows.
 
 ## On your MPC
 
+**Already using Alpha 1?** Alpha 2 is for a fresh loader install. The installer leaves a different version of the loader in place.
+
 1. **Save your project.** Plug in the stick and tap **Install** when the MPC asks. Leave the stick plugged in until the MPC screen comes back.
-2. Create a **Plugin** track and open the instrument browser. Choose **RAW MPC Plugin Loader** under **Ruminant Audio Works**. When you see **USB Files** and **Catalogue**, you can take out the stick.
+2. Create a **Plugin** track and open the instrument browser. Choose **RAW MPC Plugin Loader** under **Ruminant Audio Works**. When you see **USB Files**, **RAW Catalogue** and **Open MPC**, you can take out the stick.
 
 ## Add your own plugins to the stick
 
-Once the stick is written, you can add plugins in Finder without running USB Creator again.
+Once the stick is written, you can add plugins in Finder or File Explorer.
 
 1. Open the stick and look for `RAW-MPC-Plugins` next to `autorun`. If it’s missing, make that folder.
 2. Copy each complete Gen 1 MPC (ARMv7) plugin ZIP or folder into `RAW-MPC-Plugins`. A loose `.so` needs its `plugin-meta.xml` and any skin or other files the plugin comes with.
 3. Eject the stick and plug it into the MPC. With the loader installed, open **RAW MPC Plugin Loader** and tap **USB Files**, then **Refresh** if needed. Use **Prev** or **Next** to pick a plugin. Save your project, tap **Install**, then **Confirm**.
 
-Files copied this way appear under **USB Files**. To install a plugin with the loader on the first USB prompt, use **Add Packages…** before you write the stick. [See the example folder layout](https://mpc.ruminantaudioworks.com/docs/#add-own-plugins).
+Files copied this way appear under **USB Files**. To install a plugin with the loader at the first USB prompt, add it in USB Creator when you make the stick. [See the example folder layout](https://mpc.ruminantaudioworks.com/docs/#add-own-plugins).
 
 ## Add plugins from the catalogue
 
-Connect your MPC to the internet, open the loader and tap **Catalogue**. Plugins will appear here as they’re released. Pick a plugin with **Prev** or **Next**. Save your project, tap **Install**, then **Confirm**.
+Connect your MPC to the internet and open the loader. Choose **RAW Catalogue** for Ruminant Audio Works releases or **Open MPC** for compatible community plugins. Pick a plugin with **Prev** or **Next**. Save your project, tap **Install**, then **Confirm**.
 
 If the install prompt or a plugin is missing, see [If you get stuck](https://mpc.ruminantaudioworks.com/docs/#troubleshooting).
 

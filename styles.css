@@ -113,7 +113,7 @@ h1 {
 
 .primary-link:hover { background: var(--accent-hover); }
 
-.release {
+.release, .acknowledgement {
   display: grid;
   grid-template-columns: clamp(8rem, 18vw, 13rem) minmax(0, 1fr) 10rem;
   align-items: baseline;
@@ -127,6 +127,10 @@ h2 { font-size: clamp(1.65rem, 3.5vw, 2.6rem); line-height: 1.14; }
 .release h2 + p { max-width: 39ch; margin-top: 0.5rem; color: var(--muted); }
 .release-status { color: var(--muted); font-size: 0.8125rem; text-align: right; }
 .release-status a { color: var(--accent); text-underline-offset: 0.2em; }
+
+.acknowledgement > div { grid-column: 2 / -1; }
+.acknowledgement h2 ~ p { max-width: 65ch; margin-top: 0.75rem; color: var(--muted); }
+.acknowledgement-links { display: flex; flex-wrap: wrap; gap: 0 1.5rem; margin: 0.5rem 0 0; padding: 0; list-style: none; }
 
 .text-link, .guide a { color: var(--accent); text-underline-offset: 0.2em; }
 .text-link:hover, .guide a:hover { color: var(--accent-hover); }
@@ -259,7 +263,8 @@ nav a[aria-current="page"] { color: var(--accent); }
 }
 
 @media (max-width: 42rem) {
-  .release { grid-template-columns: minmax(0, 1fr); }
+  .release, .acknowledgement { grid-template-columns: minmax(0, 1fr); }
+  .acknowledgement > div { grid-column: auto; }
   .release-status { text-align: left; }
   .community-grid { grid-template-columns: minmax(0, 1fr); }
 }

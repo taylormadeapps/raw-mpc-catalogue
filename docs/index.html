@@ -47,7 +47,7 @@
         <ul>
           <li><strong>A first-generation standalone MPC.</strong> Akai lists the MPC One, One+, Live, Live II, X, X SE, Key 37 and Key 61 in its <a href="https://www.akaipro.com/downloads-and-support/downloads/?legacy=true">Gen 1 range</a>.</li>
           <li><strong>MPC OS 3 with the original USB install prompt.</strong> <a href="https://github.com/open-mpc/mpc-vst-plugins/blob/main/docs/USB_STICK.md#how-the-route-works">Open MPC documents this USB method through MPC OS 3.9.1</a>.</li>
-          <li><strong>RAW MPC USB Creator Alpha 1</strong> on an <strong>Apple silicon Mac running macOS 13 or later</strong>. <a href="https://github.com/taylormadeapps/raw-mpc-catalogue/releases/tag/usb-creator-v0.1.0-alpha.1">Download the Mac alpha</a>. A <a href="#prepare-windows">Windows version</a> is planned.</li>
+          <li><strong>RAW MPC USB Creator Alpha 2</strong> on an <a href="#prepare-usb">Apple silicon Mac running macOS 13 or later</a> or a <a href="#prepare-windows">Windows 10 or 11 x64 PC</a>.</li>
           <li><strong>A FAT32 USB stick.</strong> You can use one that already has projects or samples on it.</li>
         </ul>
         <p><strong>Verified with RAW.</strong> We installed and opened the loader on an <strong>MPC One+ running MPC OS 3.9</strong>. Other models and OS versions still need testing with RAW.</p>
@@ -55,8 +55,8 @@
       </section>
 
       <section class="guide-section" id="prepare-usb" aria-labelledby="prepare-title">
-        <h2 id="prepare-title">1. Make the stick on your Mac</h2>
-        <p>This is an early alpha. Back up your projects, samples and settings before trying it. Download the <code>.pkg</code> from the release page and open it to install the app. The installer includes the warranty notice.</p>
+        <h2 id="prepare-title">Make the stick on your Mac</h2>
+        <p>This is an early alpha. Back up your projects, samples and settings before trying it. <a href="https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/usb-creator-v0.1.0-alpha.2/RAW-MPC-USB-Creator-0.1.0-alpha.2-macOS-arm64.pkg">Download the signed and notarised Mac installer</a> and open the <code>.pkg</code> to install the app. The installer includes the warranty notice.</p>
         <ol>
           <li>Plug the stick into your Mac and open <strong>RAW MPC USB Creator</strong>.</li>
           <li>Click <strong>Choose USB…</strong> and pick the stick by name. Click <strong>Write USB…</strong> and confirm. USB Creator replaces any folder called <code>autorun</code>. Move that folder off the stick first if you want to keep it.</li>
@@ -67,22 +67,28 @@
 
       <section class="guide-section" id="prepare-windows" aria-labelledby="windows-title">
         <h2 id="windows-title">Make the stick on Windows</h2>
-        <p><strong>Planned.</strong> The Windows version of RAW MPC USB Creator will make the installer stick from a Windows PC. The download and setup steps will go here when it’s ready.</p>
+        <p><a href="https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/usb-creator-v0.1.0-alpha.2/RAW-MPC-USB-Creator-0.1.0-alpha.2-windows-x64.zip">Download Windows x64 Alpha 2</a>. Extract the whole ZIP, then open <strong>RAW MPC USB Creator.exe</strong> from the extracted folder. Keep the files together. This alpha is unsigned and includes a warranty notice.</p>
+        <ol>
+          <li>Plug in a FAT32 USB stick. To bundle plugins, use <strong>Add ZIPs…</strong> or <strong>Add Folder…</strong>. Use the original ZIP if a plugin includes executable files.</li>
+          <li>Click <strong>Choose USB…</strong> and select the drive itself under <strong>This PC</strong>. Click <strong>Write USB…</strong> and confirm. USB Creator replaces the <code>autorun</code> folder on the selected drive.</li>
+          <li>When you see <strong>USB ready</strong>, eject the stick in Windows.</li>
+        </ol>
       </section>
 
       <section class="guide-section" id="install-loader" aria-labelledby="install-title">
-        <h2 id="install-title">2. Install the loader on your MPC</h2>
+        <h2 id="install-title">Install the loader on your MPC</h2>
+        <p><strong>Already using Alpha 1?</strong> Alpha 2 is for a fresh loader install. The installer leaves a different version of the loader in place.</p>
         <ol>
           <li><strong>Save your project.</strong></li>
           <li>Plug in the stick. When the MPC asks to install RAW MPC Plugin Loader, tap <strong>Install</strong>. Leave the stick plugged in until the MPC screen comes back.</li>
           <li>Create a <strong>Plugin</strong> track and open the instrument browser. Choose <strong>RAW MPC Plugin Loader</strong> under <strong>Ruminant Audio Works</strong>.</li>
-          <li>When you see <strong>USB Files</strong> and <strong>Catalogue</strong>, you can take out the stick.</li>
+          <li>When you see <strong>USB Files</strong>, <strong>RAW Catalogue</strong> and <strong>Open MPC</strong>, you can take out the stick.</li>
         </ol>
       </section>
 
       <section class="guide-section" id="add-plugins" aria-labelledby="plugins-title">
         <h2 id="plugins-title">Add plugins from the catalogue</h2>
-        <p>Connect your MPC to the internet, open the loader and tap <strong>Catalogue</strong>. Plugins will appear here as they’re released.</p>
+        <p>Connect your MPC to the internet and open the loader. Choose <strong>RAW Catalogue</strong> for Ruminant Audio Works releases or <strong>Open MPC</strong> for compatible community plugins.</p>
         <p>Use <strong>Prev</strong> or <strong>Next</strong> to pick a plugin. Save your project, tap <strong>Install</strong>, then <strong>Confirm</strong>. When the MPC is back, look for the new plugin in the browser.</p>
       </section>
 
@@ -90,7 +96,7 @@
         <h2 id="own-plugins-title">Add your own plugins to a USB stick</h2>
         <p>Once the stick is written, you can copy more plugins to it without running USB Creator again. Use complete plugin ZIPs or folders made for <strong>Gen 1 MPC (ARMv7)</strong>. If you have a loose <code>.so</code>, keep it in its own plugin folder with its <code>plugin-meta.xml</code> and any skin or other files the plugin needs.</p>
         <ol>
-          <li>Open the stick in Finder. Look for <code>RAW-MPC-Plugins</code> next to <code>autorun</code>. If it’s missing, make that folder.</li>
+          <li>Open the stick in Finder or File Explorer. Look for <code>RAW-MPC-Plugins</code> next to <code>autorun</code>. If it’s missing, make that folder.</li>
           <li>Copy each plugin ZIP or whole plugin folder into <code>RAW-MPC-Plugins</code>. You can leave ZIPs zipped. Your stick should look something like this:</li>
         </ol>
         <pre><code>USB stick/
@@ -105,19 +111,19 @@
           <li>Open <strong>RAW MPC Plugin Loader</strong> and tap <strong>USB Files</strong>, then <strong>Refresh</strong> if needed. Use <strong>Prev</strong> or <strong>Next</strong> to pick a plugin.</li>
           <li>Save your project, tap <strong>Install</strong>, then <strong>Confirm</strong>. When the MPC is back, look for the plugin in the browser.</li>
         </ol>
-        <p>Plugins you copy this way appear under <strong>USB Files</strong>. The first USB install prompt only installs the loader and plugins you added in USB Creator when you made the stick.</p>
+        <p>Plugins you copy this way appear under <strong>USB Files</strong>. To install a plugin with the loader at the first USB prompt, add it in USB Creator when you make the stick.</p>
       </section>
 
       <section class="guide-section" id="troubleshooting" aria-labelledby="troubleshooting-title">
         <h2 id="troubleshooting-title">If you get stuck</h2>
         <h3>USB Creator won’t accept the stick</h3>
-        <p>In Finder, select the stick and press <kbd>⌘I</kbd> to check its format. Look for <strong>MS-DOS (FAT32)</strong>. When you click <strong>Choose USB…</strong>, select the stick by name.</p>
+        <p>On Mac, select the stick in Finder and press <kbd>⌘I</kbd>. Look for <strong>MS-DOS (FAT32)</strong>. On Windows, right-click the drive in File Explorer and open <strong>Properties</strong>. Look for <strong>FAT32</strong>. Select the drive itself in <strong>Choose USB…</strong>.</p>
         <h3>The MPC doesn’t show the Install prompt</h3>
-        <p>Open the stick in Finder and look for a folder called <code>autorun</code>. If it’s missing, make the stick again in USB Creator. Check your MPC model and OS against <a href="#before-you-start">What you’ll need</a>, then try plugging the stick in again.</p>
+        <p>Open the stick in Finder or File Explorer and look for a folder called <code>autorun</code>. If it’s missing, make the stick again in USB Creator. Check your MPC model and OS against <a href="#before-you-start">What you’ll need</a>, then try plugging the stick in again.</p>
         <h3>The loader is missing after the restart</h3>
         <p>On a <strong>Plugin</strong> track, look for <strong>RAW MPC Plugin Loader</strong> under <strong>Ruminant Audio Works</strong>.</p>
         <h3>A plugin doesn’t show up</h3>
-        <p>For USB, check that <code>RAW-MPC-Plugins</code> sits next to <code>autorun</code> and contains the complete ZIP or plugin folder for Gen 1 MPC hardware. Tap <strong>Refresh</strong>. For Catalogue, check that your MPC is online.</p>
+        <p>For USB, check that <code>RAW-MPC-Plugins</code> sits next to <code>autorun</code> and contains the complete ZIP or plugin folder for Gen 1 MPC hardware. Tap <strong>Refresh</strong>. For either online catalogue, check that your MPC is online.</p>
         <h3>The loader says the plugin is already installed</h3>
         <p>You can keep using the version you have. If you’re trying to install a newer version, get in touch with the plugin name and the message you see.</p>
         <p><a href="../#community">Get support</a> if you’re still stuck. Tell us which MPC you have, which version of MPC OS it’s running and what you see on screen.</p>
