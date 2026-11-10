@@ -37,7 +37,7 @@ Extract the whole Windows ZIP and run **RAW MPC USB Creator.exe** from the extra
 
 **Updating from an earlier alpha?** Make a new stick with the current USB Creator and follow the same install steps. The installer updates the existing RAW loader.
 
-1. **Save your project.** Plug in the stick and tap **Install** when the MPC asks. Leave the stick plugged in until the MPC screen comes back.
+1. **Load a project and save it.** Plug in the stick and tap **Install** when the MPC asks. Leave the stick plugged in until the MPC screen comes back.
 2. Create a **Plugin** track and open the instrument browser. Choose **RAW MPC Plugin Loader** under **Ruminant Audio Works**.
 3. Check that the loader version at the top of the screen matches the version in the release notes for your USB Creator download. The short build ID beside it identifies the exact build. If the install or update fails, check `autorun/INSTALL-RESULT.txt` on the stick. [USB Creator releases](https://github.com/taylormadeapps/raw-mpc-catalogue/releases)
 

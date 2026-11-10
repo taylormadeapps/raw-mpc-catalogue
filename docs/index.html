@@ -79,7 +79,7 @@
         <h2 id="install-title">Install the loader on your MPC</h2>
         <p><strong>Updating from an earlier alpha?</strong> Make a new stick with the current USB Creator and follow the same install steps. The installer updates the existing RAW loader.</p>
         <ol>
-          <li><strong>Save your project.</strong></li>
+          <li><strong>Load a project and save it.</strong></li>
           <li>Plug in the stick. When the MPC asks to install RAW MPC Plugin Loader, tap <strong>Install</strong>. Leave the stick plugged in until the MPC screen comes back.</li>
           <li>Create a <strong>Plugin</strong> track and open the instrument browser. Choose <strong>RAW MPC Plugin Loader</strong> under <strong>Ruminant Audio Works</strong>.</li>
           <li>Check that the loader version at the top of the screen matches the version in the release notes for your USB Creator download. The short build ID beside it identifies the exact build. If the install or update fails, check <code>autorun/INSTALL-RESULT.txt</code> on the stick. <a href="https://github.com/taylormadeapps/raw-mpc-catalogue/releases">USB Creator releases</a></li>
@@ -119,7 +119,7 @@
         <h3>USB Creator won’t accept the stick</h3>
         <p>On Mac, select the stick in Finder and press <kbd>⌘I</kbd>. Look for <strong>MS-DOS (FAT32)</strong>. On Windows, right-click the drive in File Explorer and open <strong>Properties</strong>. Look for <strong>FAT32</strong>. Select the drive itself in <strong>Choose USB…</strong>.</p>
         <h3>The MPC doesn’t show the Install prompt</h3>
-        <p>Open the stick in Finder or File Explorer and look for a folder called <code>autorun</code>. If it’s missing, make the stick again in USB Creator. Check your MPC model and OS against <a href="#before-you-start">What you’ll need</a>, then try plugging the stick in again.</p>
+        <p>Load a project on the MPC, then unplug the stick and plug it back in. If the prompt still doesn’t appear, check for an <code>autorun</code> folder on the stick in Finder or File Explorer. If it’s missing, make the stick again in USB Creator. Check your MPC model and OS against <a href="#before-you-start">What you’ll need</a>.</p>
         <h3>The loader is missing after the restart</h3>
         <p>On a <strong>Plugin</strong> track, look for <strong>RAW MPC Plugin Loader</strong> under <strong>Ruminant Audio Works</strong>.</p>
         <h3>A plugin doesn’t show up</h3>
