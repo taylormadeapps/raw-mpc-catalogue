@@ -3,14 +3,14 @@
 Get Ruminant Audio Works plugins on your standalone MPC. Set up the loader once, then use it to add plugins from your MPC.
 
 - [Read the full setup guide](http://mpc.ruminantaudioworks.com/docs/)
-- [Download RAW MPC USB Creator for Mac · Alpha 5](https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/usb-creator-v0.1.0-alpha.5/RAW-MPC-USB-Creator-0.1.0-alpha.5-macOS-arm64.pkg)
+- [Download RAW MPC USB Creator for Mac (Universal) · Alpha 5](https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/usb-creator-v0.1.0-alpha.5/RAW-MPC-USB-Creator-0.1.0-alpha.5-macOS-universal.pkg)
 - [Download RAW MPC USB Creator for Windows x64 · Alpha 5](https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/usb-creator-v0.1.0-alpha.5/RAW-MPC-USB-Creator-0.1.0-alpha.5-windows-x64.zip)
 
 ## What you’ll need
 
 - A **first-generation standalone MPC**. Akai lists the MPC One, One+, Live, Live II, X, X SE, Key 37 and Key 61 in its [Gen 1 range](https://www.akaipro.com/downloads-and-support/downloads/?legacy=true).
 - **MPC OS 3 through 3.9.1, with the original USB install prompt.**
-- **RAW MPC USB Creator Alpha 5** on an **Apple silicon Mac running macOS 13 or later** or a **Windows 10 or 11 x64 PC**.
+- **RAW MPC USB Creator** on an **Intel or Apple silicon Mac running macOS 13 or later** or a **Windows 10 or 11 x64 PC**.
 - A **FAT32 USB stick**. You can use one that already has projects or samples on it.
 
 Check your MPC OS version under **Menu → Preferences → Info**. If your MPC meets the requirements above, make the installer stick on [Mac](#on-your-mac) or [Windows](#on-windows).
