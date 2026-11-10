@@ -25,7 +25,6 @@
       <p class="eyebrow">Setup guide</p>
       <h1>Set up your MPC</h1>
       <p class="intro-copy">Make an installer stick, then use the loader to add plugins right from your MPC.</p>
-      <p><strong>Alpha downloads are paused</strong> while we rebuild the on-device loader using Open MPC as a reference. This guide is for people who already have an alpha build.</p>
     </header>
 
     <nav class="guide-contents" aria-labelledby="contents-title">
@@ -48,7 +47,7 @@
         <ul>
           <li><strong>A first-generation standalone MPC.</strong> Akai lists the MPC One, One+, Live, Live II, X, X SE, Key 37 and Key 61 in its <a href="https://www.akaipro.com/downloads-and-support/downloads/?legacy=true">Gen 1 range</a>.</li>
           <li><strong>MPC OS 3 with the original USB install prompt.</strong> <a href="https://github.com/open-mpc/mpc-vst-plugins/blob/main/docs/USB_STICK.md#how-the-route-works">Open MPC documents this USB method through MPC OS 3.9.1</a>.</li>
-          <li>An existing copy of <strong>RAW MPC USB Creator</strong> on an <a href="#prepare-usb">Apple silicon Mac running macOS 13 or later</a> or a <a href="#prepare-windows">Windows 10 or 11 x64 PC</a>.</li>
+          <li><strong>RAW MPC USB Creator Alpha 2</strong> on an <a href="#prepare-usb">Apple silicon Mac running macOS 13 or later</a> or a <a href="#prepare-windows">Windows 10 or 11 x64 PC</a>.</li>
           <li><strong>A FAT32 USB stick.</strong> You can use one that already has projects or samples on it.</li>
         </ul>
         <p><strong>Verified with RAW.</strong> We installed and opened the loader on an <strong>MPC One+ running MPC OS 3.9</strong>. Other models and OS versions still need testing with RAW.</p>
@@ -57,7 +56,7 @@
 
       <section class="guide-section" id="prepare-usb" aria-labelledby="prepare-title">
         <h2 id="prepare-title">Make the stick on your Mac</h2>
-        <p>Back up your projects, samples and settings before trying the alpha. If you already have the Mac installer, open the <code>.pkg</code> to install the app. The installer includes the warranty notice.</p>
+        <p>This is an early alpha. Back up your projects, samples and settings before trying it. <a href="https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/usb-creator-v0.1.0-alpha.2/RAW-MPC-USB-Creator-0.1.0-alpha.2-macOS-arm64.pkg">Download the signed and notarised Mac installer</a> and open the <code>.pkg</code> to install the app. The installer includes the warranty notice.</p>
         <ol>
           <li>Plug the stick into your Mac and open <strong>RAW MPC USB Creator</strong>.</li>
           <li>Click <strong>Choose USB…</strong> and pick the stick by name. Click <strong>Write USB…</strong> and confirm. USB Creator replaces any folder called <code>autorun</code>. Move that folder off the stick first if you want to keep it.</li>
@@ -68,7 +67,7 @@
 
       <section class="guide-section" id="prepare-windows" aria-labelledby="windows-title">
         <h2 id="windows-title">Make the stick on Windows</h2>
-        <p>If you already have the Windows ZIP, extract the whole ZIP and open <strong>RAW MPC USB Creator.exe</strong> from the extracted folder. Keep the files together. This alpha is unsigned and includes a warranty notice.</p>
+        <p><a href="https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/usb-creator-v0.1.0-alpha.2/RAW-MPC-USB-Creator-0.1.0-alpha.2-windows-x64.zip">Download Windows x64 Alpha 2</a>. Extract the whole ZIP, then open <strong>RAW MPC USB Creator.exe</strong> from the extracted folder. Keep the files together. This alpha is unsigned and includes a warranty notice.</p>
         <ol>
           <li>Plug in a FAT32 USB stick. To bundle plugins, use <strong>Add ZIPs…</strong> or <strong>Add Folder…</strong>. Use the original ZIP if a plugin includes executable files.</li>
           <li>Click <strong>Choose USB…</strong> and select the drive itself under <strong>This PC</strong>. Click <strong>Write USB…</strong> and confirm. USB Creator replaces the <code>autorun</code> folder on the selected drive.</li>
