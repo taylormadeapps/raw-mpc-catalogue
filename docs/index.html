@@ -47,7 +47,7 @@
         <ul>
           <li><strong>A first-generation standalone MPC.</strong> Akai lists the MPC One, One+, Live, Live II, X, X SE, Key 37 and Key 61 in its <a href="https://www.akaipro.com/downloads-and-support/downloads/?legacy=true">Gen 1 range</a>.</li>
           <li><strong>MPC OS 3 through 3.9.1, with the original USB install prompt.</strong></li>
-          <li><strong>RAW MPC USB Creator Alpha 4</strong> on an <a href="#prepare-usb">Apple silicon Mac running macOS 13 or later</a> or a <a href="#prepare-windows">Windows 10 or 11 x64 PC</a>.</li>
+          <li><strong>RAW MPC USB Creator Alpha 5</strong> on an <a href="#prepare-usb">Apple silicon Mac running macOS 13 or later</a> or a <a href="#prepare-windows">Windows 10 or 11 x64 PC</a>.</li>
           <li><strong>A FAT32 USB stick.</strong> You can use one that already has projects or samples on it.</li>
         </ul>
         <p>Check your MPC OS version under <strong>Menu → Preferences → Info</strong>. If your MPC meets the requirements above, make the installer stick on <a href="#prepare-usb">Mac</a> or <a href="#prepare-windows">Windows</a>.</p>
@@ -56,7 +56,7 @@
 
       <section class="guide-section" id="prepare-usb" aria-labelledby="prepare-title">
         <h2 id="prepare-title">Make the stick on your Mac</h2>
-        <p>This is an early alpha. Back up your projects, samples and settings before trying it. <a href="https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/usb-creator-v0.1.0-alpha.4/RAW-MPC-USB-Creator-0.1.0-alpha.4-macOS-arm64.pkg">Download the signed and notarised Mac installer</a> and open the <code>.pkg</code> to install the app. The installer includes the warranty notice.</p>
+        <p>This is an early alpha. Back up your projects, samples and settings before trying it. <a href="https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/usb-creator-v0.1.0-alpha.5/RAW-MPC-USB-Creator-0.1.0-alpha.5-macOS-arm64.pkg">Download the signed and notarised Mac installer</a> and open the <code>.pkg</code> to install the app. The installer includes the warranty notice.</p>
         <ol>
           <li>Plug the stick into your Mac and open <strong>RAW MPC USB Creator</strong>.</li>
           <li>Click <strong>Choose USB…</strong> and pick the stick by name. Click <strong>Write USB…</strong> and confirm. USB Creator replaces any folder called <code>autorun</code>. Move that folder off the stick first if you want to keep it.</li>
@@ -67,7 +67,7 @@
 
       <section class="guide-section" id="prepare-windows" aria-labelledby="windows-title">
         <h2 id="windows-title">Make the stick on Windows</h2>
-        <p><a href="https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/usb-creator-v0.1.0-alpha.4/RAW-MPC-USB-Creator-0.1.0-alpha.4-windows-x64.zip">Download Windows x64 Alpha 4</a>. Extract the whole ZIP, then open <strong>RAW MPC USB Creator.exe</strong> from the extracted folder. Keep the files together. This alpha is unsigned and includes a warranty notice.</p>
+        <p><a href="https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/usb-creator-v0.1.0-alpha.5/RAW-MPC-USB-Creator-0.1.0-alpha.5-windows-x64.zip">Download Windows x64 Alpha 5</a>. Extract the whole ZIP, then open <strong>RAW MPC USB Creator.exe</strong> from the extracted folder. Keep the files together. This alpha is unsigned and includes a warranty notice.</p>
         <ol>
           <li>Plug in a FAT32 USB stick. To bundle plugins, use <strong>Add ZIPs…</strong> or <strong>Add Folder…</strong>. Use the original ZIP if a plugin includes executable files.</li>
           <li>Click <strong>Choose USB…</strong> and select the drive itself under <strong>This PC</strong>. Click <strong>Write USB…</strong> and confirm. USB Creator replaces the <code>autorun</code> folder on the selected drive.</li>
@@ -89,7 +89,8 @@
       <section class="guide-section" id="add-plugins" aria-labelledby="plugins-title">
         <h2 id="plugins-title">Install plugins online</h2>
         <p>Connect your MPC to the internet and open the loader. Choose <strong>RAW Catalogue</strong> for Ruminant Audio Works releases or <strong>Open MPC</strong> for compatible community plugins.</p>
-        <p>Use <strong>Prev</strong> or <strong>Next</strong> to pick a plugin. Save your project, tap <strong>Install</strong>, then <strong>Confirm</strong>. When the MPC is back, look for the new plugin in the browser.</p>
+        <p>Use <strong>Type</strong> and <strong>Developer</strong> to filter either catalogue, then <strong>Prev</strong> or <strong>Next</strong> to pick a plugin. Save your project, tap <strong>Install</strong>, then <strong>Confirm</strong>. When the MPC is back, look for the plugin in the browser.</p>
+        <p>For an eligible RAW-installed plugin, choose the newer release in <strong>RAW Catalogue</strong> and tap <strong>Install</strong>. You can also update from <strong>USB Files</strong>. The loader keeps the registration and archives the previous folder in <code>RAW-MPC-Recovery</code>. To remove an eligible plugin, choose <strong>Uninstall</strong> in either catalogue and confirm the restart.</p>
       </section>
 
       <section class="guide-section" id="add-own-plugins" aria-labelledby="own-plugins-title">
@@ -125,7 +126,7 @@
         <h3>A plugin doesn’t show up</h3>
         <p>For USB, check that <code>RAW-MPC-Plugins</code> sits next to <code>autorun</code> and contains the complete ZIP or plugin folder for Gen 1 MPC hardware. Tap <strong>Refresh</strong>. For either online catalogue, check that your MPC is online.</p>
         <h3>The loader says the plugin is already installed</h3>
-        <p>You can keep using the version you have. If you’re trying to install a newer version, get in touch with the plugin name and the message you see.</p>
+        <p>Use Loader 0.1.5 or later for in-place updates to matching RAW-installed packages. For a copy installed by another tool, use <strong>Uninstall</strong> in the relevant catalogue before installing the replacement. If you still see a conflict, get in touch with the plugin name and the message you see.</p>
         <p><a href="../#community">Get support</a> if you’re still stuck. Tell us which MPC you have, which version of MPC OS it’s running and what you see on screen.</p>
       </section>
 

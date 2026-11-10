@@ -2,15 +2,15 @@
 
 Get Ruminant Audio Works plugins on your standalone MPC. Set up the loader once, then use it to add plugins from your MPC.
 
-- [Read the full setup guide](https://mpc.ruminantaudioworks.com/docs/)
-- [Download RAW MPC USB Creator for Mac · Alpha 4](https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/usb-creator-v0.1.0-alpha.4/RAW-MPC-USB-Creator-0.1.0-alpha.4-macOS-arm64.pkg)
-- [Download RAW MPC USB Creator for Windows x64 · Alpha 4](https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/usb-creator-v0.1.0-alpha.4/RAW-MPC-USB-Creator-0.1.0-alpha.4-windows-x64.zip)
+- [Read the full setup guide](http://mpc.ruminantaudioworks.com/docs/)
+- [Download RAW MPC USB Creator for Mac · Alpha 5](https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/usb-creator-v0.1.0-alpha.5/RAW-MPC-USB-Creator-0.1.0-alpha.5-macOS-arm64.pkg)
+- [Download RAW MPC USB Creator for Windows x64 · Alpha 5](https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/usb-creator-v0.1.0-alpha.5/RAW-MPC-USB-Creator-0.1.0-alpha.5-windows-x64.zip)
 
 ## What you’ll need
 
 - A **first-generation standalone MPC**. Akai lists the MPC One, One+, Live, Live II, X, X SE, Key 37 and Key 61 in its [Gen 1 range](https://www.akaipro.com/downloads-and-support/downloads/?legacy=true).
 - **MPC OS 3 through 3.9.1, with the original USB install prompt.**
-- **RAW MPC USB Creator Alpha 4** on an **Apple silicon Mac running macOS 13 or later** or a **Windows 10 or 11 x64 PC**.
+- **RAW MPC USB Creator Alpha 5** on an **Apple silicon Mac running macOS 13 or later** or a **Windows 10 or 11 x64 PC**.
 - A **FAT32 USB stick**. You can use one that already has projects or samples on it.
 
 Check your MPC OS version under **Menu → Preferences → Info**. If your MPC meets the requirements above, make the installer stick on [Mac](#on-your-mac) or [Windows](#on-windows).
@@ -49,13 +49,15 @@ Once the stick is written, you can add plugins in Finder or File Explorer.
 2. Copy each complete Gen 1 MPC (ARMv7) plugin ZIP or folder into `RAW-MPC-Plugins`. A loose `.so` needs its `plugin-meta.xml` and any skin or other files the plugin comes with.
 3. Eject the stick and plug it into the MPC. With the loader installed, open **RAW MPC Plugin Loader** and tap **USB Files**, then **Refresh** if needed. Use **Prev** or **Next** to pick a plugin. Save your project, tap **Install**, then **Confirm**.
 
-Files copied this way appear under **USB Files**. To install a plugin with the loader at the first USB prompt, add it in USB Creator when you make the stick. [See the example folder layout](https://mpc.ruminantaudioworks.com/docs/#add-own-plugins).
+Files copied this way appear under **USB Files**. To install a plugin with the loader at the first USB prompt, add it in USB Creator when you make the stick. [See the example folder layout](http://mpc.ruminantaudioworks.com/docs/#add-own-plugins).
 
 ## Add plugins from the catalogue
 
-Connect your MPC to the internet and open the loader. Choose **RAW Catalogue** for Ruminant Audio Works releases or **Open MPC** for compatible community plugins. Pick a plugin with **Prev** or **Next**. Save your project, tap **Install**, then **Confirm**.
+Connect your MPC to the internet and open the loader. Choose **RAW Catalogue** for Ruminant Audio Works releases or **Open MPC** for compatible community plugins. Filter by **Type** and **Developer**, then pick a plugin with **Prev** or **Next**. Save your project, tap **Install**, then **Confirm**.
 
-If the install prompt or a plugin is missing, see [If you get stuck](https://mpc.ruminantaudioworks.com/docs/#troubleshooting).
+Loader 0.1.5 can update matching RAW-installed packages from **RAW Catalogue** or **USB Files**. The previous folder is kept in `RAW-MPC-Recovery`. Use **Uninstall** in either catalogue to remove an eligible plugin.
+
+If the install prompt or a plugin is missing, see [If you get stuck](http://mpc.ruminantaudioworks.com/docs/#troubleshooting).
 
 ## Akai firmware updater
 

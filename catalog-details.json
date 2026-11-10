@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "plugins": [
+    {
+      "id": "vintage-vocoder",
+      "manufacturer": "Ruminant Audio Works",
+      "kind": "effect",
+      "uid": "56764d31",
+      "folder": "Ruminant Audio Works - VST - Vintage Vocoder FX",
+      "library": "vintage_vocoder_fx.so",
+      "releases": [
+        {
+          "sha256": "3519883377718a69f8128f9e9c36d295b0bb18ed218076d88a1736f74d7c3312",
+          "version": "1.6.0.5"
+        },
+        {
+          "sha256": "87cfb008a2ad96f8ea0000aecaef7f492314ecce6daad75d36335293ba884a5f",
+          "version": "1.6.0.4"
+        },
+        {
+          "sha256": "8a5f5fd5d40fe5ad65e9bc3df918f9a84fc45ddcb81e0339c740a58330fd3546",
+          "version": "1.6.0.2"
+        },
+        {
+          "sha256": "61f3b7441cca4d6e07c80c44c7dda690bdb0b0471ba239c234daf2a29d0ce410",
+          "version": "1.6.0.1"
+        }
+      ]
+    }
+  ]
+}

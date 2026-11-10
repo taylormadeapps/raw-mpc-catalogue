@@ -7,9 +7,9 @@
       "version": "1.6.0",
       "arch": "armv7",
       "asset": {
-        "url": "https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/vintage-vocoder-v1.6.0-alpha.2/Vintage-Vocoder-FX-1.6.0-alpha.2-mpc-armv7.zip",
-        "size": 1153905,
-        "sha256": "8a5f5fd5d40fe5ad65e9bc3df918f9a84fc45ddcb81e0339c740a58330fd3546"
+        "url": "https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/vintage-vocoder-v1.6.0-alpha.3/Vintage-Vocoder-FX-1.6.0-alpha.3-mpc-armv7.zip",
+        "size": 1155656,
+        "sha256": "3519883377718a69f8128f9e9c36d295b0bb18ed218076d88a1736f74d7c3312"
       }
     }
   ]
