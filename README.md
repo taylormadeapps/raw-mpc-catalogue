@@ -38,7 +38,8 @@ Extract the whole Windows ZIP and run **RAW MPC USB Creator.exe** from the extra
 **Already using Alpha 1 or 2?** Make a new stick with Alpha 3 and follow the same install steps. The installer updates the existing RAW loader.
 
 1. **Save your project.** Plug in the stick and tap **Install** when the MPC asks. Leave the stick plugged in until the MPC screen comes back.
-2. Create a **Plugin** track and open the instrument browser. Choose **RAW MPC Plugin Loader** under **Ruminant Audio Works**. Look for **Loader 0.1.1** and a short build ID at the top of the loader screen. If the update fails, check `autorun/INSTALL-RESULT.txt` on the stick.
+2. Create a **Plugin** track and open the instrument browser. Choose **RAW MPC Plugin Loader** under **Ruminant Audio Works**.
+3. Check that the loader version at the top of the screen matches the version in the release notes for your USB Creator download. The short build ID beside it identifies the exact build. If the install or update fails, check `autorun/INSTALL-RESULT.txt` on the stick. [USB Creator releases](https://github.com/taylormadeapps/raw-mpc-catalogue/releases)
 
 ## Add your own plugins to the stick
 
