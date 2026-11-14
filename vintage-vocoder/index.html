@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Download Vintage Vocoder for Akai MPC. Use the free stereo vocoder insert with Vintage Vocoder Sender to play a voice or sample from pads or a MIDI sequence.">
+  <title>Vintage Vocoder for Akai MPC · Ruminant Audio Works</title>
+  <link rel="canonical" href="https://mpc.ruminantaudioworks.com/vintage-vocoder/">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ruminant Audio Works MPC">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:title" content="Vintage Vocoder for Akai MPC · Ruminant Audio Works">
+  <meta property="og:description" content="Download Vintage Vocoder for Akai MPC. Use the free stereo vocoder insert with Vintage Vocoder Sender to play a voice or sample from pads or a MIDI sequence.">
+  <meta property="og:url" content="https://mpc.ruminantaudioworks.com/vintage-vocoder/">
+  <meta property="og:image" content="https://mpc.ruminantaudioworks.com/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="RAW MPC Plugin Loader by Ruminant Audio Works">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Vintage Vocoder for Akai MPC · Ruminant Audio Works">
+  <meta name="twitter:description" content="Download Vintage Vocoder for Akai MPC. Use the free stereo vocoder insert with Vintage Vocoder Sender to play a voice or sample from pads or a MIDI sequence.">
+  <meta name="twitter:image" content="https://mpc.ruminantaudioworks.com/assets/og-image.jpg">
+  <meta name="twitter:image:alt" content="RAW MPC Plugin Loader by Ruminant Audio Works">
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../assets/analytics.css">
+  <script defer src="../assets/analytics.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="../" aria-label="RAW MPC home"><span>RAW</span> MPC</a>
+      <nav aria-label="Main navigation">
+        <a href="../#loader">Loader</a>
+        <a href="../#catalogue">Catalogue</a>
+        <a href="../docs/">Docs</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap guide" id="main" tabindex="-1">
+    <header class="guide-intro">
+      <p class="eyebrow"><a href="../#catalogue">RAW Catalogue</a></p>
+      <h1>Vintage Vocoder for MPC</h1>
+      <p class="intro-copy">A free stereo vocoder for standalone Akai MPCs. Play a voice or sample from the pads or the sequencer, with eight carrier oscillators, a multimode filter and left/right split routing.</p>
+    </header>
+    <nav class="guide-contents" aria-labelledby="contents-title">
+      <p class="eyebrow" id="contents-title">Contents</p>
+      <ul>
+        <li><a href="#download">Download and install</a></li>
+        <li><a href="#play-midi">Play the vocoder with MIDI</a></li>
+        <li><a href="#carrier-modes">Carrier modes</a></li>
+        <li><a href="#troubleshooting">Troubleshooting</a></li>
+      </ul>
+    </nav>
+
+    <div class="guide-content">
+      <section class="guide-section" id="download">
+        <h2>Download and install</h2>
+        <p>Version 1.7.0. Install <strong>Vintage Vocoder FX</strong> for the audio effect. To play it with MIDI on MPC OS 3.10.1 or later, install <strong>Vintage Vocoder Sender</strong> from the same release.</p>
+        <ul>
+          <li><strong>Gen 1 MPC</strong> · <a href="https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/vintage-vocoder-mpc-v1.7.0/Vintage-Vocoder-FX-1.7.0-mpc-armv7.zip" aria-label="Download Vintage Vocoder FX for Gen 1 MPC">Download FX</a> · <a href="https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/vintage-vocoder-mpc-v1.7.0/Vintage-Vocoder-Sender-1.7.0-mpc-armv7.zip" aria-label="Download Vintage Vocoder Sender for Gen 1 MPC">Download Sender</a></li>
+          <li><strong>Gen 2 MPC</strong> · <a href="https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/vintage-vocoder-mpc-v1.7.0/Vintage-Vocoder-FX-1.7.0-mpc-aarch64.zip" aria-label="Download Vintage Vocoder FX for Gen 2 MPC">Download FX</a> · <a href="https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/vintage-vocoder-mpc-v1.7.0/Vintage-Vocoder-Sender-1.7.0-mpc-aarch64.zip" aria-label="Download Vintage Vocoder Sender for Gen 2 MPC">Download Sender</a></li>
+        </ul>
+        <p>Install each plugin from <strong>RAW Catalogue</strong> or use the ZIPs with <strong>USB Files</strong>. You can also unzip each package and copy its complete plugin folder into <code>VST2 Plugins</code> on your drive. Save your project before restarting MPC to refresh <strong>External Plugins</strong>. <a href="../docs/stock.html#add-plugins">Read the External Plugin Support guide</a>.</p>
+        <p>On Gen 1 with MPC OS 3.9.1 or earlier, use the <a href="../docs/legacy.html">legacy installation guide</a> for the FX. The MIDI setup below is supported on MPC OS 3.10.1 and later.</p>
+      </section>
+
+      <section class="guide-section" id="play-midi">
+        <h2>Play the vocoder with MIDI</h2>
+        <ol>
+          <li>Put a recording of your voice or another sample on an audio or Drum track. Add <strong>Vintage Vocoder FX</strong> in an insert slot on that track so the sound passes through the effect.</li>
+          <li>Create a separate <strong>Plugin</strong> track and select <strong>Vintage Vocoder Sender</strong> from <strong>External Plugins</strong>.</li>
+          <li>Open the FX’s <strong>Vocoder</strong> tab and set the carrier to <strong>MIDI</strong>.</li>
+          <li>Play the voice or sample and hold a note on the Sender track’s pads or a connected MIDI keyboard. You can record or enter notes on the Sender track and play the sequence back with the audio.</li>
+        </ol>
+        <p>Sender is silent. Its notes set the pitch of the FX’s internal carrier while the audio shapes the sound. Every Vintage Vocoder FX instance set to <strong>MIDI</strong> follows the same Sender notes. Insert the FX on additional audio tracks to play them together.</p>
+      </section>
+
+      <section class="guide-section" id="carrier-modes">
+        <h2>Carrier modes</h2>
+        <p>Carrier is a routing choice on the Vocoder tab. After recalling a preset or saved project, check that Carrier is set to <strong>MIDI</strong> if you want it to follow Sender.</p>
+        <ul>
+          <li><strong>Internal</strong> gives you a fixed pitch carrier without a Sender track. The oscillator pitch controls tune the carrier.</li>
+          <li><strong>MIDI</strong> takes its pitch from incoming notes. Use <strong>Transpose</strong> to shift the played pitches and the oscillator level, tune and waveform controls to shape the carrier.</li>
+          <li><strong>Left mod</strong> and <strong>Right mod</strong> take the modulator from the named stereo input channel and the carrier from the other channel.</li>
+          <li><strong>Carrier test</strong> lets you hear the fixed carrier directly and check the oscillator settings.</li>
+        </ul>
+      </section>
+
+      <section class="guide-section" id="troubleshooting">
+        <h2>Troubleshooting</h2>
+        <ul>
+          <li><strong>Sender is missing.</strong> Look in the instrument browser on a Plugin track. FX appears in the insert browser. Check that both <strong>Enable Enhancements</strong> and <strong>External Plugin Support</strong> are on, then save your project and restart MPC after a manual installation.</li>
+          <li><strong>The FX is silent in MIDI mode.</strong> Play a longer note on the Sender track while the audio plays. Check that <strong>MIDI note-ons</strong> advances in Sender and the FX. If it advances in both, check that audio is reaching the insert and at least one carrier oscillator is enabled.</li>
+          <li><strong>Only Sender counts notes.</strong> Check that FX is set to <strong>MIDI</strong> and both plugins are from the same release. Open the FX from <strong>External Plugins</strong> if the project still uses an older <code>Synths</code> copy.</li>
+          <li><strong>You hear only the original audio.</strong> Check that the Vocoder is <strong>On</strong> and start with <strong>Dry mix</strong> at 0%.</li>
+        </ul>
+        <p><a href="../#community">Get MPC support</a> or <a href="https://vv.ruminantaudioworks.com/">explore the desktop edition</a>.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <a class="footer-mark" href="https://taype.ruminantaudioworks.com/ruminant-audio-works/" aria-label="Ruminant Audio Works about page">
+        <img src="../assets/raw-logo.webp" alt="" width="240" height="295" loading="lazy" decoding="async">
+      </a>
+      <p class="footer-wordmark"><a href="https://taype.ruminantaudioworks.com/ruminant-audio-works/">Ruminant Audio Works</a> <span aria-hidden="true">·</span> South Downs, UK</p>
+      <p class="footer-copy"><a href="https://taype.ruminantaudioworks.com/ruminant-audio-works/">Ruminant Audio Works</a> Ltd. Company No. 16978494. Registered in England and Wales.</p>
+      <details class="analytics-preferences" hidden>
+        <summary>Analytics preferences</summary>
+        <div class="analytics-panel">
+          <p>Google Analytics uses cookies to count page views and ZIP download clicks. You can change your choice here at any time.</p>
+          <div class="analytics-actions">
+            <button type="button" data-analytics="allow">Allow analytics</button>
+            <button type="button" data-analytics="decline">Keep analytics off</button>
+          </div>
+          <p role="status"></p>
+        </div>
+      </details>
+    </div>
+  </footer>
+</body>
+</html>

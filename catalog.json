@@ -4,12 +4,23 @@
     {
       "id": "vintage-vocoder",
       "name": "Vintage Vocoder FX",
-      "version": "1.6.0",
+      "version": "1.7.0",
       "arch": "armv7",
       "asset": {
-        "url": "https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/vintage-vocoder-v1.6.0-alpha.3/Vintage-Vocoder-FX-1.6.0-alpha.3-mpc-armv7.zip",
-        "size": 1155656,
-        "sha256": "3519883377718a69f8128f9e9c36d295b0bb18ed218076d88a1736f74d7c3312"
+        "url": "https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/vintage-vocoder-mpc-v1.7.0/Vintage-Vocoder-FX-1.7.0-mpc-armv7.zip",
+        "size": 1254527,
+        "sha256": "1962deaf2bfab78331f77f5e93f7d580c18ccc881f7bfb20d5c695166497c9f2"
+      }
+    },
+    {
+      "id": "vintage-vocoder-sender",
+      "name": "Vintage Vocoder Sender",
+      "version": "1.7.0",
+      "arch": "armv7",
+      "asset": {
+        "url": "https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/vintage-vocoder-mpc-v1.7.0/Vintage-Vocoder-Sender-1.7.0-mpc-armv7.zip",
+        "size": 76798,
+        "sha256": "09acbcda145e25463a1b2afcf742434fc3be785a625cebf7ba719bfd489f8fdb"
       }
     }
   ]

@@ -1,0 +1,45 @@
+.analytics-preferences {
+  margin: 1rem auto 0;
+  max-width: 27rem;
+  color: var(--muted);
+  font-size: 0.875rem;
+  text-align: left;
+}
+
+.analytics-preferences summary {
+  width: fit-content;
+  min-height: 2.75rem;
+  margin-inline: auto;
+  padding: 0.6rem 0.4rem;
+  cursor: pointer;
+  color: var(--accent);
+}
+
+.analytics-panel {
+  padding: 1rem;
+  border: 1px solid var(--divider);
+  background: var(--community-panel);
+}
+
+.analytics-panel p { margin: 0 0 0.75rem; }
+
+.analytics-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.analytics-actions button {
+  min-height: 2.75rem;
+  padding-inline: 0.75rem;
+  border: 1px solid var(--muted);
+  background: var(--background);
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+}
+
+.analytics-actions button:hover:not(:disabled) { border-color: var(--accent); }
+.analytics-actions button:disabled { color: var(--muted); cursor: default; }
+.analytics-panel [role="status"] { margin: 0.6rem 0 0; }
+.analytics-panel [role="status"]:empty { display: none; }
