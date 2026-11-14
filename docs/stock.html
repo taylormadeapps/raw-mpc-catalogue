@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Set up RAW MPC Plugin Loader with External Plugin Support on MPC OS 3.10.1 and later. Install, move and remove plugins on Gen 1 and Gen 2 MPCs.">
+  <title>Install Akai MPC Plugins on MPC OS 3.10.1 and Later · Ruminant Audio Works</title>
+  <link rel="canonical" href="https://mpc.ruminantaudioworks.com/docs/stock.html">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ruminant Audio Works MPC">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:title" content="Install Akai MPC Plugins on MPC OS 3.10.1 and Later · Ruminant Audio Works">
+  <meta property="og:description" content="Set up RAW MPC Plugin Loader with External Plugin Support on MPC OS 3.10.1 and later. Install, move and remove plugins on Gen 1 and Gen 2 MPCs.">
+  <meta property="og:url" content="https://mpc.ruminantaudioworks.com/docs/stock.html">
+  <meta property="og:image" content="https://mpc.ruminantaudioworks.com/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="RAW MPC Plugin Loader by Ruminant Audio Works">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Install Akai MPC Plugins on MPC OS 3.10.1 and Later · Ruminant Audio Works">
+  <meta name="twitter:description" content="Set up RAW MPC Plugin Loader with External Plugin Support on MPC OS 3.10.1 and later. Install, move and remove plugins on Gen 1 and Gen 2 MPCs.">
+  <meta name="twitter:image" content="https://mpc.ruminantaudioworks.com/assets/og-image.jpg">
+  <meta name="twitter:image:alt" content="RAW MPC Plugin Loader by Ruminant Audio Works">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="../" aria-label="RAW MPC home"><span>RAW</span> MPC</a>
+      <nav aria-label="Main navigation">
+        <a href="../#loader">Loader</a>
+        <a href="../#catalogue">Catalogue</a>
+        <a href="./" aria-current="page">Docs</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap guide" id="main" tabindex="-1">
+    <header class="guide-intro">
+      <p class="eyebrow"><a href="./">Choose your MPC OS version</a></p>
+      <h1>MPC OS 3.10.1 and later</h1>
+      <p class="intro-copy">Open RAW Plugin Loader from USB on a Gen 1 or Gen 2 standalone MPC, then choose where to install your plugins.</p>
+    </header>
+    <nav class="guide-contents" aria-labelledby="contents-title">
+      <p class="eyebrow" id="contents-title">Contents</p>
+      <ul>
+        <li><a href="#prepare-usb">Prepare the USB stick</a></li>
+        <li><a href="#install-loader">Open RAW on the MPC</a></li>
+        <li><a href="#add-plugins">Install plugins</a></li>
+        <li><a href="#add-own-plugins">Install from USB Files</a></li>
+        <li><a href="#manage-storage">Move or remove installed plugins</a></li>
+        <li><a href="#troubleshooting">If you get stuck</a></li>
+      </ul>
+    </nav>
+    <div class="guide-content">
+      <section class="guide-section" id="prepare-usb">
+        <h2>Prepare the USB stick</h2>
+        <p>Download <a href="../#loader">RAW MPC USB Creator Alpha 6</a> for Mac or Windows. Choose a FAT32 USB stick in the Creator and select <strong>Write USB</strong>. The Creator writes both supported layouts onto the same stick.</p>
+        <p>When the Creator says <strong>USB ready</strong>, eject the stick. Read the <a href="./#alpha-warranty">alpha warranty notice</a> before testing. If you already have a compatible plugin package, you can add it under <a href="#add-own-plugins">USB Files</a> after writing the stick.</p>
+        <p>To prepare the stick by hand, unzip the <a href="https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/usb-creator-v0.1.0-alpha.6/RAW-MPC-Plugin-Loader-0.2.0-mpc-3.10.1.zip">loader ZIP</a> and copy its whole RAW plugin folder into <code>VST2 Plugins</code> at the root of the stick.</p>
+      </section>
+      <section class="guide-section" id="install-loader">
+        <h2>Open RAW on the MPC</h2>
+        <ol>
+          <li>Under <strong>Menu → Preferences → Enhancements</strong>, turn on <strong>Enable Enhancements</strong> and <strong>External Plugin Support</strong>.</li>
+          <li>Insert the prepared stick. If the legacy USB install prompt appears, dismiss it. Create a <strong>Plugin</strong> track, then choose <strong>RAW MPC Plugin Loader</strong> under <strong>External Plugins</strong>.</li>
+          <li>Keep the stick plugged in while you use RAW. To keep RAW on the MPC, move it to the internal user drive from <a href="#manage-storage">Manage Storage</a>.</li>
+        </ol>
+      </section>
+      <section class="guide-section" id="add-plugins">
+        <h2>Install plugins</h2>
+        <ol>
+          <li>Connect your MPC to the internet. In RAW, open <strong>RAW Catalogue</strong> or <strong>Open MPC</strong> and select a plugin.</li>
+          <li>Tap <strong>Install to</strong> to cycle through the writable drives. Choose the internal drive, SD card or USB stick by name.</li>
+          <li>Tap <strong>Install</strong>. Save your project in MPC, return to RAW, then tap <strong>Continue</strong> and <strong>Restart Now</strong>. After MPC restarts, open <strong>External Plugins</strong> in an instrument slot or effect insert.</li>
+        </ol>
+        <p><strong>Restart Now</strong> applies a pending change and discards any unsaved project edits. <strong>Cancel</strong> is available on both screens. The same steps apply to updates and removals.</p>
+        <p>Plugins run from their chosen drive. Leave removable storage connected when you use a plugin installed there. An eligible update stays on the drive where the plugin is already installed. To remove an eligible plugin, choose it in its catalogue and tap <strong>Uninstall</strong>. RAW saves previous and removed folders in <code>RAW-MPC-Recovery</code> on that drive.</p>
+      </section>
+      <section class="guide-section" id="add-own-plugins">
+        <h2>Install from USB Files</h2>
+        <p>Put a complete plugin ZIP or folder for your MPC generation into <code>RAW-MPC-Plugins</code> at the root of the stick. In RAW, open <strong>USB Files</strong>, select the package and choose the destination before installing.</p>
+        <p>You can also use a plugin already packaged for Akai’s External Plugin Support directly from a drive. Unzip it and put its entire folder, including <code>plugin.json</code>, directly inside <code>VST2 Plugins</code> at the root of that drive.</p>
+      </section>
+      <section class="guide-section" id="manage-storage">
+        <h2>Move or remove installed plugins</h2>
+        <ol>
+          <li>Tap <strong>Manage Storage</strong>. Use <strong>Prev</strong> and <strong>Next</strong> to select a copy by drive. <strong>This copy</strong> marks the RAW Loader you opened.</li>
+          <li>To move the selected copy, tap the destination control until it shows the USB stick, internal drive or SD card you want. Tap <strong>Move</strong>. If that drive already has the plugin, remove that copy before retrying the move.</li>
+          <li>To remove a copy, select it and tap <strong>Remove</strong>. For either action, save your project in MPC, return to RAW, then tap <strong>Continue</strong> and <strong>Restart Now</strong>.</li>
+        </ol>
+        <p>RAW puts the original folder in <code>RAW-MPC-Recovery</code> on the source drive. To restore it, first remove any active copy, then put the archived folder back into <code>VST2 Plugins</code>.</p>
+        <p>Choose <strong>RAW MPC Plugin Loader (Legacy)</strong> and tap <strong>Remove</strong> to clear the older <code>Synths</code> installation. RAW backs up the folder and its settings before removing the registration. Projects that used the legacy copy may need RAW re-added from <strong>External Plugins</strong>.</p>
+      </section>
+      <section class="guide-section" id="troubleshooting">
+        <h2>If you get stuck</h2>
+        <p>If RAW doesn’t appear, check both Enhancements switches, the firmware version and the <code>VST2 Plugins</code> folder at the root of the stick. If a drive is missing from <strong>Install to</strong>, check it is connected and writable, then tap <strong>Refresh</strong>.</p>
+        <p>If MPC lists a plugin but cannot load it from a particular drive, try the internal user drive. Some MPC setups mount removable drives with execution disabled.</p>
+        <p>Plugins previously installed in <code>Synths</code> may still load in saved projects. To select them in a new track, use a copy packaged for External Plugin Support.</p>
+        <p><a href="../#community">Get support</a> with your MPC model, firmware version and the message on screen.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <a class="footer-mark" href="https://taype.ruminantaudioworks.com/ruminant-audio-works/" aria-label="Ruminant Audio Works about page">
+        <img src="../assets/raw-logo.webp" alt="" width="240" height="295" loading="lazy" decoding="async">
+      </a>
+      <p class="footer-wordmark"><a href="https://taype.ruminantaudioworks.com/ruminant-audio-works/">Ruminant Audio Works</a> <span aria-hidden="true">·</span> South Downs, UK</p>
+      <p class="footer-copy"><a href="https://taype.ruminantaudioworks.com/ruminant-audio-works/">Ruminant Audio Works</a> Ltd. Company No. 16978494. Registered in England and Wales.</p>
+    </div>
+  </footer>
+</body>
+</html>

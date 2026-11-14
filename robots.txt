@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://mpc.ruminantaudioworks.com/sitemap.xml

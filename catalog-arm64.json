@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "plugins": [
+    {
+      "id": "vintage-vocoder",
+      "name": "Vintage Vocoder FX",
+      "version": "1.6.0",
+      "arch": "aarch64",
+      "asset": {
+        "url": "https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/vintage-vocoder-v1.6.0-alpha.4/Vintage-Vocoder-FX-1.6.0.5-mpc-aarch64.zip",
+        "size": 1532190,
+        "sha256": "7f5f0ec0c8c28c0a4750f96a63fa256bc185b8c9fbd6de728342dc0e62aeea28"
+      }
+    }
+  ]
+}

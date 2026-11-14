@@ -125,6 +125,7 @@ h1 {
 
 h2 { font-size: clamp(1.65rem, 3.5vw, 2.6rem); line-height: 1.14; }
 .release h2 + p { max-width: 39ch; margin-top: 0.5rem; color: var(--muted); }
+.release h2 + p + p { max-width: 39ch; margin-top: 0.65rem; color: var(--muted); }
 .release-status { color: var(--muted); font-size: 0.8125rem; text-align: right; }
 .release-status a { color: var(--accent); text-underline-offset: 0.2em; }
 
@@ -203,6 +204,19 @@ nav a[aria-current="page"] { color: var(--accent); }
 .guide-section li + li { margin-top: 0.55rem; }
 .guide-section code { color: var(--accent); overflow-wrap: anywhere; }
 .guide-section pre { margin: 0.8rem 0 0; padding: 0.75rem 1rem; overflow-x: auto; background: var(--community-panel); border-radius: 0.25rem; }
+
+.firmware-chooser {
+  display: grid;
+  grid-template-columns: minmax(0, 44rem);
+  gap: 1.5rem;
+  padding-block: clamp(2rem, 6vw, 5rem);
+}
+.firmware-chooser .guide-intro { grid-area: auto; }
+.firmware-routes { display: grid; gap: 0.75rem; }
+.firmware-routes a { display: grid; gap: 0.3rem; padding: 1rem 1.25rem; background: var(--community-panel); text-decoration: none; }
+.firmware-routes strong { font-size: 1.25rem; text-decoration: underline; }
+.firmware-routes span { color: var(--muted); }
+.firmware-chooser .guide-section { margin-top: 0; }
 
 .community { padding-block: clamp(3rem, 7vw, 5rem); text-align: center; }
 

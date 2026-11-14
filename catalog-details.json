@@ -10,6 +10,10 @@
       "library": "vintage_vocoder_fx.so",
       "releases": [
         {
+          "sha256": "7f5f0ec0c8c28c0a4750f96a63fa256bc185b8c9fbd6de728342dc0e62aeea28",
+          "version": "1.6.0.5"
+        },
+        {
           "sha256": "3519883377718a69f8128f9e9c36d295b0bb18ed218076d88a1736f74d7c3312",
           "version": "1.6.0.5"
         },

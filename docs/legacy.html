@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Use the original USB install prompt to set up RAW MPC Plugin Loader on a first-generation Akai MPC running supported MPC OS 3 firmware through 3.9.1.">
+  <title>Install Akai MPC Plugins on MPC OS 3.9.1 and Earlier · Ruminant Audio Works</title>
+  <link rel="canonical" href="https://mpc.ruminantaudioworks.com/docs/legacy.html">
+  <link rel="icon" type="image/png" href="../assets/favicon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ruminant Audio Works MPC">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:title" content="Install Akai MPC Plugins on MPC OS 3.9.1 and Earlier · Ruminant Audio Works">
+  <meta property="og:description" content="Use the original USB install prompt to set up RAW MPC Plugin Loader on a first-generation Akai MPC running supported MPC OS 3 firmware through 3.9.1.">
+  <meta property="og:url" content="https://mpc.ruminantaudioworks.com/docs/legacy.html">
+  <meta property="og:image" content="https://mpc.ruminantaudioworks.com/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="RAW MPC Plugin Loader by Ruminant Audio Works">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Install Akai MPC Plugins on MPC OS 3.9.1 and Earlier · Ruminant Audio Works">
+  <meta name="twitter:description" content="Use the original USB install prompt to set up RAW MPC Plugin Loader on a first-generation Akai MPC running supported MPC OS 3 firmware through 3.9.1.">
+  <meta name="twitter:image" content="https://mpc.ruminantaudioworks.com/assets/og-image.jpg">
+  <meta name="twitter:image:alt" content="RAW MPC Plugin Loader by Ruminant Audio Works">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="../" aria-label="RAW MPC home"><span>RAW</span> MPC</a>
+      <nav aria-label="Main navigation">
+        <a href="../#loader">Loader</a>
+        <a href="../#catalogue">Catalogue</a>
+        <a href="./" aria-current="page">Docs</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap guide" id="main" tabindex="-1">
+    <header class="guide-intro">
+      <p class="eyebrow"><a href="./">Choose your MPC OS version</a></p>
+      <h1>MPC OS 3.9.1 and earlier</h1>
+      <p class="intro-copy">Set up the loader with an installer stick. Then add plugins directly on your MPC, online or from USB.</p>
+    </header>
+
+    <nav class="guide-contents" aria-labelledby="contents-title">
+      <p class="eyebrow" id="contents-title">Contents</p>
+      <ul>
+        <li><a href="#before-you-start">What you’ll need</a></li>
+        <li><a href="#alpha-warranty">Alpha warranty notice</a></li>
+        <li><a href="#prepare-usb">On your Mac</a></li>
+        <li><a href="#prepare-windows">On Windows</a></li>
+        <li><a href="#install-loader">On your MPC</a></li>
+        <li><a href="#add-plugins">Install plugins online</a></li>
+        <li><a href="#add-own-plugins">Install plugins from USB</a></li>
+        <li><a href="#troubleshooting">If you get stuck</a></li>
+        <li><a href="#akai-firmware">Akai firmware reference</a></li>
+      </ul>
+    </nav>
+
+    <div class="guide-content">
+      <section class="guide-section" id="before-you-start" aria-labelledby="before-title">
+        <h2 id="before-title">What you’ll need</h2>
+        <ul>
+          <li><strong>A first-generation standalone MPC.</strong> Akai lists the MPC One, One+, Live, Live II, X, X SE, Key 37 and Key 61 in its <a href="https://www.akaipro.com/downloads-and-support/downloads/?legacy=true">Gen 1 range</a>.</li>
+          <li><strong>MPC OS 3 through 3.9.1, with the original USB install prompt.</strong></li>
+          <li><strong>RAW MPC USB Creator</strong> on an <a href="#prepare-usb">Intel or Apple silicon Mac running macOS 13 or later</a> or a <a href="#prepare-windows">Windows 10 or 11 x64 PC</a>.</li>
+          <li><strong>A FAT32 USB stick.</strong> You can use one that already has projects or samples on it.</li>
+        </ul>
+        <p>Check your MPC OS version under <strong>Menu → Preferences → Info</strong>. If your MPC meets the requirements above, make the installer stick on <a href="#prepare-usb">Mac</a> or <a href="#prepare-windows">Windows</a>.</p>
+        <p><strong>Verified with RAW.</strong> On an <strong>MPC One+ running MPC OS 3.9.0</strong>, we installed and opened the loader and added a plugin from a catalogue. We also tested the loader on <strong>MPC OS 3.9.1</strong>.</p>
+      </section>
+
+      <section class="guide-section" id="alpha-warranty" aria-labelledby="warranty-title">
+        <h2 id="warranty-title">Alpha warranty notice</h2>
+        <p>RAW MPC USB Creator, RAW MPC Plugin Loader and plugins are early alpha software from Ruminant Audio Works Ltd. They are provided as is, without any additional warranty to the extent permitted by law. We do not promise that they will be error-free, run without interruption, or work with every MPC, computer, USB stick or plugin.</p>
+        <p>Back up your projects, samples and settings before trying the alpha. Test it away from sessions or performances where you need your setup to work reliably.</p>
+        <p>Nothing in this notice limits your statutory rights or any liability that cannot lawfully be limited or excluded. Third-party components remain subject to their own licences.</p>
+      </section>
+
+      <section class="guide-section" id="prepare-usb" aria-labelledby="prepare-title">
+        <h2 id="prepare-title">Make the stick on your Mac</h2>
+        <p>This is an early alpha. Back up your projects, samples and settings before trying it. <a href="https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/usb-creator-v0.1.0-alpha.6/RAW-MPC-USB-Creator-0.1.0-alpha.6-macOS-universal.pkg">Download the signed and notarised universal Mac installer</a> and open the <code>.pkg</code> to install the app. The installer includes the <a href="#alpha-warranty">warranty notice</a>.</p>
+        <ol>
+          <li>Plug the stick into your Mac and open <strong>RAW MPC USB Creator</strong>.</li>
+          <li>Click <strong>Choose USB…</strong> and pick the stick by name. Click <strong>Write USB…</strong> and confirm. USB Creator replaces any folder called <code>autorun</code>. Move that folder off the stick first if you want to keep it.</li>
+          <li>When you see <strong>USB ready</strong>, eject the stick in Finder.</li>
+        </ol>
+        <p>To install a plugin with the loader on the first run, click <strong>Add Packages…</strong> and pick the ZIP or the whole plugin folder before you click <strong>Write USB…</strong>. Once the stick is written, you can <a href="#add-own-plugins">add your own plugins to it</a> in Finder.</p>
+      </section>
+
+      <section class="guide-section" id="prepare-windows" aria-labelledby="windows-title">
+        <h2 id="windows-title">Make the stick on Windows</h2>
+        <p><a href="https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/usb-creator-v0.1.0-alpha.6/RAW-MPC-USB-Creator-0.1.0-alpha.6-windows-x64.zip">Download Windows x64 Alpha 6</a>. Extract the whole ZIP, then open <strong>RAW MPC USB Creator.exe</strong> from the extracted folder. Keep the files together. This alpha is unsigned and includes the <a href="#alpha-warranty">warranty notice</a>.</p>
+        <ol>
+          <li>Plug in a FAT32 USB stick. To bundle plugins, use <strong>Add ZIPs…</strong> or <strong>Add Folder…</strong>. Use the original ZIP if a plugin includes executable files.</li>
+          <li>Click <strong>Choose USB…</strong> and select the drive itself under <strong>This PC</strong>. Click <strong>Write USB…</strong> and confirm. USB Creator replaces the <code>autorun</code> folder on the selected drive.</li>
+          <li>When you see <strong>USB ready</strong>, eject the stick in Windows.</li>
+        </ol>
+      </section>
+
+      <section class="guide-section" id="install-loader" aria-labelledby="install-title">
+        <h2 id="install-title">Install the loader on your MPC</h2>
+        <p><strong>Updating from an earlier alpha?</strong> Make a new stick with the current USB Creator and follow the same install steps. The installer updates the existing RAW loader.</p>
+        <ol>
+          <li><strong>Load a project and save it.</strong></li>
+          <li>Plug in the stick. When the MPC asks to install RAW MPC Plugin Loader, tap <strong>Install</strong>. Leave the stick plugged in until the MPC screen comes back.</li>
+          <li>Create a <strong>Plugin</strong> track and open the instrument browser. Choose <strong>RAW MPC Plugin Loader</strong> under <strong>Ruminant Audio Works</strong>.</li>
+          <li>Check that the loader version at the top of the screen matches the version in the release notes for your USB Creator download. The short build ID beside it identifies the exact build. If the install or update fails, check <code>autorun/INSTALL-RESULT.txt</code> on the stick. <a href="https://github.com/taylormadeapps/raw-mpc-catalogue/releases">USB Creator releases</a></li>
+        </ol>
+      </section>
+
+      <section class="guide-section" id="add-plugins" aria-labelledby="plugins-title">
+        <h2 id="plugins-title">Install plugins online</h2>
+        <p>Connect your MPC to the internet and open the loader. Choose <strong>RAW Catalogue</strong> for Ruminant Audio Works releases or <strong>Open MPC</strong> for compatible community plugins.</p>
+        <p>Use <strong>Type</strong> and <strong>Developer</strong> to filter either catalogue, then <strong>Prev</strong> or <strong>Next</strong> to pick a plugin. Tap <strong>Install</strong>, save your project in MPC, then return to RAW and choose <strong>Continue</strong> followed by <strong>Restart Now</strong>. When the MPC is back, look for the plugin in the browser.</p>
+        <p>For an eligible RAW-installed plugin, choose the newer release in <strong>RAW Catalogue</strong> and tap <strong>Install</strong>. You can also update from <strong>USB Files</strong>. The loader keeps the registration and archives the previous folder in <code>RAW-MPC-Recovery</code>. To remove an eligible plugin, choose <strong>Uninstall</strong> in either catalogue and follow the same save and restart steps.</p>
+      </section>
+
+      <section class="guide-section" id="add-own-plugins" aria-labelledby="own-plugins-title">
+        <h2 id="own-plugins-title">Install plugins from USB</h2>
+        <p>Once the stick is written, you can copy more plugins to it without running USB Creator again. Use complete plugin ZIPs or folders made for <strong>Gen 1 MPC (ARMv7)</strong>. If you have a loose <code>.so</code>, keep it in its own plugin folder with its <code>plugin-meta.xml</code> and any skin or other files the plugin needs.</p>
+        <ol>
+          <li>Open the stick in Finder or File Explorer. Look for <code>RAW-MPC-Plugins</code> next to <code>autorun</code>. If it’s missing, make that folder.</li>
+          <li>Copy each plugin ZIP or whole plugin folder into <code>RAW-MPC-Plugins</code>. You can leave ZIPs zipped. Your stick should look something like this:</li>
+        </ol>
+        <pre><code>USB stick/
+├── autorun/
+└── RAW-MPC-Plugins/
+    ├── My Synth.zip
+    └── My Effect/
+        ├── plugin-meta.xml
+        └── my-effect.so</code></pre>
+        <ol start="3">
+          <li>Eject the stick and plug it into your MPC. If you haven’t installed the loader yet, <a href="#install-loader">do that first</a>. If the loader is already installed and the MPC asks to install it again, tap <strong>Cancel</strong>.</li>
+          <li>Open <strong>RAW MPC Plugin Loader</strong> and tap <strong>USB Files</strong>, then <strong>Refresh</strong> if needed. Use <strong>Prev</strong> or <strong>Next</strong> to pick a plugin.</li>
+          <li>Tap <strong>Install</strong>, save your project in MPC, then return to RAW and choose <strong>Continue</strong> followed by <strong>Restart Now</strong>. When the MPC is back, look for the plugin in the browser.</li>
+        </ol>
+        <p>Plugins you copy this way appear under <strong>USB Files</strong>. To install a plugin with the loader at the first USB prompt, add it in USB Creator when you make the stick.</p>
+      </section>
+
+      <section class="guide-section" id="troubleshooting" aria-labelledby="troubleshooting-title">
+        <h2 id="troubleshooting-title">If you get stuck</h2>
+        <h3>USB Creator won’t accept the stick</h3>
+        <p>On Mac, select the stick in Finder and press <kbd>⌘I</kbd>. Look for <strong>MS-DOS (FAT32)</strong>. On Windows, right-click the drive in File Explorer and open <strong>Properties</strong>. Look for <strong>FAT32</strong>. Select the drive itself in <strong>Choose USB…</strong>.</p>
+        <h3>The MPC doesn’t show the Install prompt</h3>
+        <p>Load a project on the MPC, then unplug the stick and plug it back in. If the prompt still doesn’t appear, check for an <code>autorun</code> folder on the stick in Finder or File Explorer. If it’s missing, make the stick again in USB Creator. Check your MPC model and OS against <a href="#before-you-start">What you’ll need</a>.</p>
+        <h3>The loader is missing after the restart</h3>
+        <p>On a <strong>Plugin</strong> track, look for <strong>RAW MPC Plugin Loader</strong> under <strong>Ruminant Audio Works</strong>.</p>
+        <h3>A plugin doesn’t show up</h3>
+        <p>For USB, check that <code>RAW-MPC-Plugins</code> sits next to <code>autorun</code> and contains the complete ZIP or plugin folder for Gen 1 MPC hardware. Tap <strong>Refresh</strong>. For either online catalogue, check that your MPC is online.</p>
+        <h3>The loader says the plugin is already installed</h3>
+        <p>Use Loader 0.1.5 or later for in-place updates to matching RAW-installed packages. For a copy installed by another tool, use <strong>Uninstall</strong> in the relevant catalogue before installing the replacement. If you still see a conflict, get in touch with the plugin name and the message you see.</p>
+        <p><a href="../#community">Get support</a> if you’re still stuck. Tell us which MPC you have, which version of MPC OS it’s running and what you see on screen.</p>
+      </section>
+
+      <section class="guide-section" id="akai-firmware" aria-labelledby="firmware-title">
+        <h2 id="firmware-title">Akai firmware reference</h2>
+        <p>For firmware maintenance, see <a href="https://www.akaipro.com/downloads-and-support/downloads/?legacy=true">Akai’s Legacy Downloads</a>. Installing RAW does not require a firmware update if you’re already on a supported version.</p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <a class="footer-mark" href="https://taype.ruminantaudioworks.com/ruminant-audio-works/" aria-label="Ruminant Audio Works about page">
+        <img src="../assets/raw-logo.webp" alt="" width="240" height="295" loading="lazy" decoding="async">
+      </a>
+      <p class="footer-wordmark"><a href="https://taype.ruminantaudioworks.com/ruminant-audio-works/">Ruminant Audio Works</a> <span aria-hidden="true">·</span> South Downs, UK</p>
+      <p class="footer-copy"><a href="https://taype.ruminantaudioworks.com/ruminant-audio-works/">Ruminant Audio Works</a> Ltd. Company No. 16978494. Registered in England and Wales.</p>
+    </div>
+  </footer>
+</body>
+</html>
