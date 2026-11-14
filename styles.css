@@ -125,7 +125,9 @@ h1 {
 
 h2 { font-size: clamp(1.65rem, 3.5vw, 2.6rem); line-height: 1.14; }
 .release h2 + p { max-width: 39ch; margin-top: 0.5rem; color: var(--muted); }
-.release h2 + p + p { max-width: 39ch; margin-top: 0.65rem; color: var(--muted); }
+.loader-guides { margin-block: 0.75rem; padding-inline-start: 1.25rem; }
+.loader-guides li + li { margin-top: 0.35rem; }
+.loader-guides a, .loader-guides + p a { color: var(--accent); text-underline-offset: 0.2em; }
 .release-status { color: var(--muted); font-size: 0.8125rem; text-align: right; }
 .release-status a { color: var(--accent); text-underline-offset: 0.2em; }
 
@@ -212,10 +214,25 @@ nav a[aria-current="page"] { color: var(--accent); }
   padding-block: clamp(2rem, 6vw, 5rem);
 }
 .firmware-chooser .guide-intro { grid-area: auto; }
-.firmware-routes { display: grid; gap: 0.75rem; }
-.firmware-routes a { display: grid; gap: 0.3rem; padding: 1rem 1.25rem; background: var(--community-panel); text-decoration: none; }
-.firmware-routes strong { font-size: 1.25rem; text-decoration: underline; }
-.firmware-routes span { color: var(--muted); }
+.firmware-options { display: grid; gap: 0.75rem; margin: 0; padding: 0; list-style: none; }
+.firmware-options a {
+  display: block;
+  padding: 1rem 1.25rem;
+  border-inline-start: 3px solid var(--accent);
+  background: var(--community-panel);
+  text-decoration: none;
+}
+.firmware-options a:hover { background: var(--divider); }
+.firmware-options h2 {
+  color: var(--accent);
+  font-family: inherit;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.firmware-options p { margin-top: 0.45rem; color: var(--muted); }
 .firmware-chooser .guide-section { margin-top: 0; }
 
 .community { padding-block: clamp(3rem, 7vw, 5rem); text-align: center; }

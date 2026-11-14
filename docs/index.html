@@ -22,7 +22,7 @@
   <meta name="twitter:description" content="Find the RAW MPC Plugin Loader setup guide for your Akai MPC. Choose the Gen 1 USB install route or External Plugins on MPC OS 3.10.1 and later.">
   <meta name="twitter:image" content="https://mpc.ruminantaudioworks.com/assets/og-image.jpg">
   <meta name="twitter:image:alt" content="RAW MPC Plugin Loader by Ruminant Audio Works">
-  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../styles.css?v=alpha6-firmware">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -40,17 +40,23 @@
   <main class="wrap firmware-chooser" id="main" tabindex="-1">
     <header class="guide-intro">
       <h1>Choose your MPC OS version</h1>
-      <p class="intro-copy">On the MPC, check <strong>Menu → Preferences → Info</strong>, then follow the guide for your version.</p>
+      <p class="intro-copy">On your MPC, go to <strong>Menu → Preferences → Info</strong> to check your version.</p>
     </header>
     <nav class="firmware-routes" aria-label="MPC OS setup guides">
-      <a href="legacy.html">
-        <strong>3.9.1 and earlier</strong>
-        <span>Gen 1 · Install RAW using the USB prompt.</span>
-      </a>
-      <a href="stock.html">
-        <strong>3.10.1 and later</strong>
-        <span>Gen 1 and Gen 2 · Open RAW under External Plugins.</span>
-      </a>
+      <ul class="firmware-options" role="list">
+        <li>
+          <a href="legacy.html">
+            <h2>MPC OS 3.9.1 and earlier</h2>
+            <p>Gen 1 MPCs. Install RAW from the USB prompt.</p>
+          </a>
+        </li>
+        <li>
+          <a href="stock.html">
+            <h2>MPC OS 3.10.1 and later</h2>
+            <p>Gen 1 and Gen 2 MPCs. Enable External Plugin Support, then open RAW under External Plugins.</p>
+          </a>
+        </li>
+      </ul>
     </nav>
     <p><strong>MPC OS 3.10.0 is unsupported.</strong></p>
 
