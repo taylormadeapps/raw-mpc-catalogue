@@ -41,12 +41,13 @@
     <header class="guide-intro">
       <p class="eyebrow"><a href="./">Choose your MPC OS version</a></p>
       <h1>MPC OS 3.10.1 and later</h1>
-      <p class="intro-copy">Open RAW Plugin Loader from USB on a Gen 1 or Gen 2 standalone MPC, then choose where to install your plugins.</p>
+      <p class="intro-copy">Open RAW Plugin Loader from an SD card or USB stick on a Gen 1 or Gen 2 standalone MPC, then choose where to install your plugins.</p>
     </header>
     <nav class="guide-contents" aria-labelledby="contents-title">
       <p class="eyebrow" id="contents-title">Contents</p>
       <ul>
         <li><a href="#prepare-usb">Prepare the USB stick</a></li>
+        <li><a href="#manual-install">Install manually on SD or USB</a></li>
         <li><a href="#install-loader">Open RAW on the MPC</a></li>
         <li><a href="#add-plugins">Install plugins</a></li>
         <li><a href="#add-own-plugins">Install from USB Files</a></li>
@@ -59,14 +60,21 @@
         <h2>Prepare the USB stick</h2>
         <p>Download <a href="../#loader">RAW MPC USB Creator Alpha 6</a> for Mac or Windows. Choose a FAT32 USB stick in the Creator and select <strong>Write USB</strong>. The Creator writes both supported layouts onto the same stick.</p>
         <p>When the Creator says <strong>USB ready</strong>, eject the stick. Read the <a href="./#alpha-warranty">alpha warranty notice</a> before testing. If you already have a compatible plugin package, you can add it under <a href="#add-own-plugins">USB Files</a> after writing the stick.</p>
-        <p>To prepare the stick by hand, unzip the <a href="https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/usb-creator-v0.1.0-alpha.6/RAW-MPC-Plugin-Loader-0.2.0-mpc-3.10.1.zip">loader ZIP</a> and copy its whole RAW plugin folder into <code>VST2 Plugins</code> at the root of the stick.</p>
+      </section>
+      <section class="guide-section" id="manual-install">
+        <h2>Install manually on SD or USB</h2>
+        <ol>
+          <li><a href="https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/usb-creator-v0.1.0-alpha.6/RAW-MPC-Plugin-Loader-0.2.0-mpc-3.10.1.zip">Download the RAW MPC Plugin Loader ZIP</a> and unzip it. The same ZIP works on Gen 1 and Gen 2.</li>
+          <li>Find <code>VST2 Plugins</code> at the root of your SD card or USB stick. Create it if it’s missing.</li>
+          <li>Copy the entire <code>Ruminant Audio Works - VST - RAW MPC Plugin Loader</code> folder directly into <code>VST2 Plugins</code>. Keep <code>plugin.json</code> and the rest of the ZIP contents inside the loader folder.</li>
+        </ol>
       </section>
       <section class="guide-section" id="install-loader">
         <h2>Open RAW on the MPC</h2>
         <ol>
           <li>Under <strong>Menu → Preferences → Enhancements</strong>, turn on <strong>Enable Enhancements</strong> and <strong>External Plugin Support</strong>.</li>
-          <li>Insert the prepared stick. If the legacy USB install prompt appears, dismiss it. Create a <strong>Plugin</strong> track, then choose <strong>RAW MPC Plugin Loader</strong> under <strong>External Plugins</strong>.</li>
-          <li>Keep the stick plugged in while you use RAW. To keep RAW on the MPC, move it to the internal user drive from <a href="#manage-storage">Manage Storage</a>.</li>
+          <li>Insert the SD card or USB stick. If the legacy USB install prompt appears, dismiss it. Create a <strong>Plugin</strong> track, then choose <strong>RAW MPC Plugin Loader</strong> under <strong>External Plugins</strong>.</li>
+          <li>Leave the SD card or USB stick connected while you use RAW. To keep RAW on the MPC, move it to the internal user drive from <a href="#manage-storage">Manage Storage</a>.</li>
         </ol>
       </section>
       <section class="guide-section" id="add-plugins">
@@ -96,7 +104,7 @@
       </section>
       <section class="guide-section" id="troubleshooting">
         <h2>If you get stuck</h2>
-        <p>If RAW doesn’t appear, check both Enhancements switches, the firmware version and the <code>VST2 Plugins</code> folder at the root of the stick. If a drive is missing from <strong>Install to</strong>, check it is connected and writable, then tap <strong>Refresh</strong>.</p>
+        <p>If RAW doesn’t appear, check both Enhancements switches, the firmware version and the <code>VST2 Plugins</code> folder at the root of your SD card or USB stick. If a drive is missing from <strong>Install to</strong>, check it is connected and writable, then tap <strong>Refresh</strong>.</p>
         <p>If MPC lists a plugin but cannot load it from a particular drive, try the internal user drive. Some MPC setups mount removable drives with execution disabled.</p>
         <p>Plugins previously installed in <code>Synths</code> may still load in saved projects. To select them in a new track, use a copy packaged for External Plugin Support.</p>
         <p><a href="../#community">Get support</a> with your MPC model, firmware version and the message on screen.</p>
