@@ -6,7 +6,7 @@ Get Ruminant Audio Works plugins on your standalone MPC. Set up the loader once,
 - [Download and set up Vintage Vocoder for MPC](https://mpc.ruminantaudioworks.com/vintage-vocoder/)
 - [Download and set up Harmonculus for MPC](https://mpc.ruminantaudioworks.com/harmonculus/)
 - [Download RAW MPC USB Creator for Mac (Universal) · Alpha 6](https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/usb-creator-v0.1.0-alpha.6/RAW-MPC-USB-Creator-0.1.0-alpha.6-macOS-universal.pkg)
-- [Download RAW MPC USB Creator for Windows x64 · Alpha 6](https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/usb-creator-v0.1.0-alpha.6/RAW-MPC-USB-Creator-0.1.0-alpha.6-windows-x64.zip)
+- [Download RAW MPC USB Creator for Windows x64 · Alpha 6](https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/usb-creator-v0.1.0-alpha.6/RAW-MPC-USB-Creator-0.1.0-alpha.6-windows-x64-signed.zip)
 - [Download the RAW Loader 0.2.0 ZIP for MPC OS 3.10.1 and later](https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/usb-creator-v0.1.0-alpha.6/RAW-MPC-Plugin-Loader-0.2.0-mpc-3.10.1.zip)
 
 Check your version in **Menu → Preferences → Info** to choose the setup guide.
