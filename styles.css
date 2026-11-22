@@ -173,6 +173,8 @@ nav a[aria-current="page"] { color: var(--accent); }
 .guide-intro { grid-area: intro; }
 .guide-content { grid-area: article; max-width: 72ch; }
 .guide-intro h1 { font-size: clamp(2.75rem, 7vw, 4.65rem); line-height: 1.06; }
+.product-support { max-width: 64ch; margin-top: 0.75rem; color: var(--muted); }
+.product-support strong { color: var(--ink); }
 .guide-actions {
   display: flex;
   flex-wrap: wrap;
