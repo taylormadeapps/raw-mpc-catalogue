@@ -56,6 +56,24 @@
           "version": "1.7.0.0"
         }
       ]
+    },
+    {
+      "id": "harmonculus",
+      "manufacturer": "Ruminant Audio Works",
+      "kind": "instrument",
+      "uid": "486d6370",
+      "folder": "Ruminant Audio Works - VST - Harmonculus",
+      "library": "harmonculus.so",
+      "releases": [
+        {
+          "sha256": "9d1bd1f474c610f41d3f51517bd270a86f9b1fccab0858781b798d2376159835",
+          "version": "0.2.0.0"
+        },
+        {
+          "sha256": "754ef718d50e0e2aad5acc2d679936130528b6addf37f72aa449429db264d5f5",
+          "version": "0.2.0.0"
+        }
+      ]
     }
   ]
 }

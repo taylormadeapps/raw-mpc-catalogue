@@ -3,18 +3,18 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Harmonculus is an additive resynthesis instrument coming to Akai MPC One+.">
-  <title>Harmonculus for Akai MPC One+ · Ruminant Audio Works</title>
+  <meta name="description" content="Harmonculus is an additive resynthesis instrument for standalone Akai MPC. Download the Gen 1 or Gen 2 edition.">
+  <title>Harmonculus for Akai MPC · Ruminant Audio Works</title>
   <link rel="canonical" href="https://mpc.ruminantaudioworks.com/harmonculus/">
   <link rel="icon" type="image/png" href="../assets/favicon.png">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Ruminant Audio Works MPC">
   <meta property="og:locale" content="en_GB">
-  <meta property="og:title" content="Harmonculus for Akai MPC One+ · Ruminant Audio Works">
-  <meta property="og:description" content="Turn a sample into an instrument you can play from the pads or sequencer. Coming to Akai MPC One+.">
+  <meta property="og:title" content="Harmonculus for Akai MPC · Ruminant Audio Works">
+  <meta property="og:description" content="Turn a sample into an instrument you can play from the pads or sequencer. Available for Gen 1 and Gen 2 standalone MPC.">
   <meta property="og:url" content="https://mpc.ruminantaudioworks.com/harmonculus/">
-  <meta property="og:image" content="https://mpc.ruminantaudioworks.com/assets/og-image.jpg">
-  <meta property="og:image:alt" content="RAW MPC Plugin Loader by Ruminant Audio Works">
+  <meta property="og:image" content="https://mpc.ruminantaudioworks.com/assets/harmonculus-mpc-playback.png">
+  <meta property="og:image:alt" content="Harmonculus on MPC One+ with playback and loop controls alongside a 3D graph of the partials">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="../assets/analytics.css">
@@ -36,9 +36,10 @@
   <main class="wrap guide" id="main" tabindex="-1">
     <header class="guide-intro">
       <p class="eyebrow"><a href="../#catalogue">RAW Catalogue</a></p>
+      <img class="harmonculus-shell" src="../assets/harmonculus-shell.webp" alt="" width="512" height="512">
       <h1>Harmonculus for MPC</h1>
       <p class="intro-copy">Turn a WAV sample into an instrument, or start with a factory preset. Shape the harmonics and play the result from the pads or sequencer.</p>
-      <p class="product-support"><strong>Coming soon for Akai MPC One+.</strong> Use MPC OS <strong>3.9.1</strong> via legacy RAW Loader, or <strong>3.10.1 and later</strong> with <strong>External Plugin Support</strong> enabled.</p>
+      <p class="product-support">Available for <strong>Gen 1 and Gen 2 standalone MPC</strong>. Use <strong>MPC OS 3.10.1 or later</strong> with <strong>External Plugin Support</strong>. Gen 1 owners can also use legacy RAW Loader on <strong>MPC OS 3.9.1</strong>.</p>
       <div class="product-support">
         <p><strong>Try free for 14 days.</strong></p>
         <p id="purchase-includes">One purchase includes MPC and desktop (macOS, Windows and Linux).</p>
@@ -48,6 +49,7 @@
         <a class="text-link" aria-describedby="purchase-includes" href="https://ruminantaudioworks.moonbase.sh/buy/harmonculus">Buy Harmonculus <span aria-hidden="true">→</span></a>
       </div>
       <p class="product-support"><a href="https://taype.ruminantaudioworks.com/harmonculus/">Harmonculus for desktop <span aria-hidden="true">→</span></a></p>
+      <img class="harmonculus-screen" src="../assets/harmonculus-mpc-playback.png" width="1280" height="800" alt="Harmonculus on MPC One+ with playback and loop controls alongside a 3D graph of the partials">
     </header>
     <nav class="guide-contents" aria-labelledby="contents-title">
       <p class="eyebrow" id="contents-title">Contents</p>
@@ -61,8 +63,7 @@
     <div class="guide-content">
       <section class="guide-section" id="install">
         <h2>Install online on your MPC</h2>
-        <p>Harmonculus will appear in <strong>RAW Catalogue</strong> at launch.</p>
-        <p>New to RAW Loader? Follow the setup guide for <a href="../docs/legacy.html">MPC OS 3.9.1</a> or <a href="../docs/stock.html">MPC OS 3.10.1 and later</a>.</p>
+        <p>New to RAW Loader? Follow the setup guide for <a href="../docs/legacy.html">MPC OS 3.9.1 on Gen 1</a> or <a href="../docs/stock.html">MPC OS 3.10.1 and later</a>.</p>
         <ol>
           <li>Connect your MPC to the internet and open <strong>RAW MPC Plugin Loader</strong> on a Plugin track.</li>
           <li>Choose <strong>RAW Catalogue</strong>, select <strong>Harmonculus</strong> and tap <strong>Install</strong>.</li>
@@ -72,9 +73,13 @@
 
       <section class="guide-section" id="download">
         <h2>Install from ZIP</h2>
-        <p>The ZIP for MPC One+ will be available here at launch.</p>
+        <p>Choose the Harmonculus 0.2.0 ZIP for your MPC.</p>
+        <ul>
+          <li><strong>Gen 1 MPC, including MPC One+</strong> · <a href="https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/harmonculus-mpc-v0.2.0/Harmonculus-0.2.0-mpc-armv7.zip" aria-label="Download Harmonculus for Gen 1 MPC">Download ARMv7 ZIP</a></li>
+          <li><strong>Gen 2 MPC</strong> · <a href="https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/harmonculus-mpc-v0.2.0/Harmonculus-0.2.0-mpc-aarch64.zip" aria-label="Download Harmonculus for Gen 2 MPC">Download AArch64 ZIP</a></li>
+        </ul>
         <h3>Install with RAW Loader</h3>
-        <p>Use the <a href="../docs/legacy.html#add-own-plugins">legacy loader on MPC OS 3.9.1</a> or the <a href="../docs/stock.html#add-own-plugins">stock loader on MPC OS 3.10.1 and later</a>. Copy the ZIP into <code>RAW-MPC-Plugins</code> at the root of your USB stick or SD card. Open <strong>USB Files</strong> in RAW Loader and install the ZIP. Save your project before restarting MPC.</p>
+        <p>Use the <a href="../docs/legacy.html#add-own-plugins">legacy loader on Gen 1 with MPC OS 3.9.1</a> or the <a href="../docs/stock.html#add-own-plugins">stock loader on MPC OS 3.10.1 and later</a>. Copy the ZIP into <code>RAW-MPC-Plugins</code> at the root of your USB stick or SD card. Open <strong>USB Files</strong> in RAW Loader and install the ZIP. Save your project before restarting MPC.</p>
         <h3>Install with Akai External Plugin Support</h3>
         <p>On <strong>MPC OS 3.10.1 and later</strong>, unzip the download and copy the complete Harmonculus folder, including <code>plugin.json</code>, directly into <code>VST2 Plugins</code> at the root of your SD card or USB stick. Create <code>VST2 Plugins</code> if needed.</p>
         <p>In <strong>Menu → Preferences → Enhancements</strong>, turn on <strong>Enable Enhancements</strong> and <strong>External Plugin Support</strong>. Save your project and restart MPC. Open Harmonculus from <strong>External Plugins</strong> on a Plugin track. Leave the drive connected while using it.</p>
