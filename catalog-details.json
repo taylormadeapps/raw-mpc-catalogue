@@ -72,6 +72,22 @@
         {
           "sha256": "754ef718d50e0e2aad5acc2d679936130528b6addf37f72aa449429db264d5f5",
           "version": "0.2.0.0"
+        },
+        {
+          "sha256": "3f9b2a9dff2878fba864bf768f8d02517075f725f976539a810092a55471016b",
+          "version": "0.2.0.0"
+        },
+        {
+          "sha256": "682e785342af56572042037392d8ebdf8bee8bb3bc577befaab0566778bea5a0",
+          "version": "0.2.0.0"
+        },
+        {
+          "sha256": "713a3640d6559a5440e8575b606a48751453cd703e0c0e1baaf70965fc53d81e",
+          "version": "0.2.0.1"
+        },
+        {
+          "sha256": "37af39b54a09b2118745bad6b1f2083c514ccf596f5d1cc79a2e1dcd900f808d",
+          "version": "0.2.0.1"
         }
       ]
     }
