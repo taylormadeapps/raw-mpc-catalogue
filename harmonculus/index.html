@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Harmonculus is an additive resynthesis instrument for standalone Akai MPC. Download the Gen 1 or Gen 2 edition.">
+  <meta name="description" content="Additive resynthesis for standalone Akai MPC, with 365 instrument presets and a dedicated library of 365 presets for drums and percussion.">
   <title>Harmonculus for Akai MPC · Ruminant Audio Works</title>
   <link rel="canonical" href="https://mpc.ruminantaudioworks.com/harmonculus/">
   <link rel="icon" type="image/png" href="../assets/favicon.png">
@@ -11,7 +11,7 @@
   <meta property="og:site_name" content="Ruminant Audio Works MPC">
   <meta property="og:locale" content="en_GB">
   <meta property="og:title" content="Harmonculus for Akai MPC · Ruminant Audio Works">
-  <meta property="og:description" content="Turn a sample into an instrument you can play from the pads or sequencer. Available for Gen 1 and Gen 2 standalone MPC.">
+  <meta property="og:description" content="Explore 365 instrument presets and 365 presets for drums and percussion, or turn a sample into a playable instrument. For Gen 1 and Gen 2 MPC.">
   <meta property="og:url" content="https://mpc.ruminantaudioworks.com/harmonculus/">
   <meta property="og:image" content="https://mpc.ruminantaudioworks.com/assets/harmonculus-mpc-playback.png">
   <meta property="og:image:alt" content="Harmonculus on MPC One+ with playback and loop controls alongside a 3D graph of the partials">
@@ -76,6 +76,30 @@
     .harmonculus-actions { grid-area: actions; }
     .harmonculus-actions .guide-actions { margin-top: 0; }
 
+    .harmonculus-demos {
+      padding-block: clamp(1.75rem, 4vw, 3rem);
+      border-block-start: 1px solid var(--divider);
+      scroll-margin-block-start: 1rem;
+    }
+
+    .harmonculus-demos > p {
+      max-width: 72ch;
+      margin-block-start: 0.5rem;
+    }
+
+    .demo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+      gap: 1.25rem 1.5rem;
+      margin-block: 1.25rem 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .demo-grid li { min-width: 0; }
+    .demo-grid h3 { font-size: 1.0625rem; font-weight: 650; }
+    .demo-grid audio { display: block; width: 100%; margin-block-start: 0.5rem; }
+
     .harmonculus-guide {
       grid-template-areas: "contents article";
       padding-block-start: clamp(1.75rem, 4vw, 3rem);
@@ -98,6 +122,10 @@
   </style>
   <link rel="stylesheet" href="../assets/analytics.css">
   <script defer src="../assets/analytics.js"></script>
+  <!-- Shared with the desktop page. Update the integrity hash when publishing changes to vault.js. -->
+  <script defer src="https://taype.ruminantaudioworks.com/harmonculus/vault.js"
+          integrity="sha384-dZg33tx4Ku2KAD2cbFMIo18Vvq8mHMCNjLyhDWW6CV4t+M80YGolpWCaoX81zHKg"
+          crossorigin="anonymous"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -132,10 +160,76 @@
       </div>
     </section>
 
+    <section class="wrap harmonculus-demos" id="preset-libraries" aria-labelledby="preset-libraries-heading">
+      <h2 id="preset-libraries-heading">Preset libraries</h2>
+      <p>Explore 365 instrument presets, voiced and refined with care. The sounds take inspiration from Boards of Canada, Air and other artists we love.</p>
+      <p>A dedicated drums and percussion library adds another 365 presets, from acoustic hits and analogue drum-machine sounds to log drums, reverse cymbals and cinematic taiko.</p>
+      <p>All eight demos below use instrument presets, with no additional instruments or processing.</p>
+      <ul id="from-the-vault" class="demo-grid" role="list">
+        <li>
+          <h3 id="demo-driven-double-saw-bass">Driven Double Saw Bass</h3>
+          <audio controls preload="none" aria-labelledby="demo-driven-double-saw-bass">
+            <source src="https://taype.ruminantaudioworks.com/harmonculus/audio/driven-double-saw-bass.mp3" type="audio/mpeg">
+            <a href="https://taype.ruminantaudioworks.com/harmonculus/audio/driven-double-saw-bass.mp3" aria-describedby="demo-driven-double-saw-bass">Open MP3</a>
+          </audio>
+        </li>
+        <li>
+          <h3 id="demo-hollow-whistle-sweep">Hollow Whistle Sweep</h3>
+          <audio controls preload="none" aria-labelledby="demo-hollow-whistle-sweep">
+            <source src="https://taype.ruminantaudioworks.com/harmonculus/audio/hollow-whistle-sweep.mp3" type="audio/mpeg">
+            <a href="https://taype.ruminantaudioworks.com/harmonculus/audio/hollow-whistle-sweep.mp3" aria-describedby="demo-hollow-whistle-sweep">Open MP3</a>
+          </audio>
+        </li>
+        <li>
+          <h3 id="demo-dub-strings">Dub Strings</h3>
+          <audio controls preload="none" aria-labelledby="demo-dub-strings">
+            <source src="https://taype.ruminantaudioworks.com/harmonculus/audio/dub-strings.mp3" type="audio/mpeg">
+            <a href="https://taype.ruminantaudioworks.com/harmonculus/audio/dub-strings.mp3" aria-describedby="demo-dub-strings">Open MP3</a>
+          </audio>
+        </li>
+        <li>
+          <h3 id="demo-round-filter-bass">Round Filter Bass</h3>
+          <audio controls preload="none" aria-labelledby="demo-round-filter-bass">
+            <source src="https://taype.ruminantaudioworks.com/harmonculus/audio/round-filter-bass.mp3" type="audio/mpeg">
+            <a href="https://taype.ruminantaudioworks.com/harmonculus/audio/round-filter-bass.mp3" aria-describedby="demo-round-filter-bass">Open MP3</a>
+          </audio>
+        </li>
+        <li>
+          <h3 id="demo-cathedral-strings">Cathedral Strings</h3>
+          <audio controls preload="none" aria-labelledby="demo-cathedral-strings">
+            <source src="https://taype.ruminantaudioworks.com/harmonculus/audio/cathedral-strings.mp3" type="audio/mpeg">
+            <a href="https://taype.ruminantaudioworks.com/harmonculus/audio/cathedral-strings.mp3" aria-describedby="demo-cathedral-strings">Open MP3</a>
+          </audio>
+        </li>
+        <li>
+          <h3 id="demo-beating-mallet">Beating Mallet</h3>
+          <audio controls preload="none" aria-labelledby="demo-beating-mallet">
+            <source src="https://taype.ruminantaudioworks.com/harmonculus/audio/beating-mallet.mp3" type="audio/mpeg">
+            <a href="https://taype.ruminantaudioworks.com/harmonculus/audio/beating-mallet.mp3" aria-describedby="demo-beating-mallet">Open MP3</a>
+          </audio>
+        </li>
+        <li>
+          <h3 id="demo-tape-triangle-pad">Tape Triangle Pad</h3>
+          <audio controls preload="none" aria-labelledby="demo-tape-triangle-pad">
+            <source src="https://taype.ruminantaudioworks.com/harmonculus/audio/tape-triangle-pad.mp3" type="audio/mpeg">
+            <a href="https://taype.ruminantaudioworks.com/harmonculus/audio/tape-triangle-pad.mp3" aria-describedby="demo-tape-triangle-pad">Open MP3</a>
+          </audio>
+        </li>
+        <li>
+          <h3 id="demo-copper-weather">Copper Weather</h3>
+          <audio controls preload="none" aria-labelledby="demo-copper-weather">
+            <source src="https://taype.ruminantaudioworks.com/harmonculus/audio/copper-weather.mp3" type="audio/mpeg">
+            <a href="https://taype.ruminantaudioworks.com/harmonculus/audio/copper-weather.mp3" aria-describedby="demo-copper-weather">Open MP3</a>
+          </audio>
+        </li>
+      </ul>
+    </section>
+
     <div class="wrap guide harmonculus-guide">
       <nav class="guide-contents" aria-labelledby="contents-title">
         <p class="eyebrow" id="contents-title">Contents</p>
         <ul>
+          <li><a href="#preset-libraries">Preset libraries</a></li>
           <li><a href="#install">Install online</a></li>
           <li><a href="#download">Install from ZIP</a></li>
           <li><a href="#activate">Activate</a></li>
@@ -156,10 +250,10 @@
 
         <section class="guide-section" id="download">
           <h2>Install from ZIP</h2>
-          <p>Choose the Harmonculus 0.2.0 ZIP for your MPC.</p>
+          <p>Choose the Harmonculus 0.3.0 ZIP for your MPC. Both ZIPs include all 730 factory presets.</p>
           <ul>
-            <li><strong>Gen 1 MPC, including MPC One+</strong> · <a href="https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/harmonculus-mpc-v0.2.0/Harmonculus-0.2.0-mpc-armv7-r1.zip" aria-label="Download Harmonculus for Gen 1 MPC">Download ARMv7 ZIP</a></li>
-            <li><strong>Gen 2 MPC</strong> · <a href="https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/harmonculus-mpc-v0.2.0/Harmonculus-0.2.0-mpc-aarch64-r1.zip" aria-label="Download Harmonculus for Gen 2 MPC">Download AArch64 ZIP</a></li>
+            <li><strong>Gen 1 MPC, including MPC One+</strong> · <a href="https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/harmonculus-mpc-v0.3.0/Harmonculus-0.3.0-mpc-armv7.zip" aria-label="Download Harmonculus for Gen 1 MPC">Download ARMv7 ZIP</a></li>
+            <li><strong>Gen 2 MPC</strong> · <a href="https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/harmonculus-mpc-v0.3.0/Harmonculus-0.3.0-mpc-aarch64.zip" aria-label="Download Harmonculus for Gen 2 MPC">Download AArch64 ZIP</a></li>
           </ul>
           <h3>Install with RAW Loader</h3>
           <p>Use the <a href="../docs/legacy.html#add-own-plugins">legacy loader on Gen 1 with MPC OS 3.9.1</a> or the <a href="../docs/stock.html#add-own-plugins">stock loader on MPC OS 3.10.1 and later</a>. Copy the ZIP into <code>RAW-MPC-Plugins</code> at the root of your USB stick or SD card. Open <strong>USB Files</strong> in RAW Loader and install the ZIP. Save your project before restarting MPC.</p>

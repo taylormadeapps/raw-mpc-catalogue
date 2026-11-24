@@ -26,12 +26,12 @@
     {
       "id": "harmonculus",
       "name": "Harmonculus",
-      "version": "0.2.0",
+      "version": "0.3.0",
       "arch": "aarch64",
       "asset": {
-        "url": "https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/harmonculus-mpc-v0.2.0/Harmonculus-0.2.0-mpc-aarch64-r1.zip",
-        "size": 48330143,
-        "sha256": "37af39b54a09b2118745bad6b1f2083c514ccf596f5d1cc79a2e1dcd900f808d"
+        "url": "https://github.com/taylormadeapps/raw-mpc-catalogue/releases/download/harmonculus-mpc-v0.3.0/Harmonculus-0.3.0-mpc-aarch64.zip",
+        "size": 205655553,
+        "sha256": "e184947f555a9c97174c0ad3cb1336f9cb1914354d6f1f1a759bc6a265c10c9d"
       }
     }
   ]

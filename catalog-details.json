@@ -88,6 +88,14 @@
         {
           "sha256": "37af39b54a09b2118745bad6b1f2083c514ccf596f5d1cc79a2e1dcd900f808d",
           "version": "0.2.0.1"
+        },
+        {
+          "sha256": "36a21196c5226e3cd5adf8997778a8cbd135962244df105ee7f68c4d21d7a415",
+          "version": "0.3.0.0"
+        },
+        {
+          "sha256": "e184947f555a9c97174c0ad3cb1336f9cb1914354d6f1f1a759bc6a265c10c9d",
+          "version": "0.3.0.0"
         }
       ]
     }
