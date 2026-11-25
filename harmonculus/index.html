@@ -93,12 +93,19 @@
     .harmonculus-kits {
       display: grid;
       grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
-      grid-template-areas: "copy screen";
+      grid-template-areas: "copy screen" "demos demos";
       align-items: start;
       column-gap: clamp(1.5rem, 4vw, 3rem);
     }
 
     .harmonculus-kits-copy { grid-area: copy; }
+    .harmonculus-kits .demo-grid { grid-area: demos; }
+
+    .kit-demo-kit {
+      margin-block-start: 0.2rem;
+      color: var(--muted);
+      font-size: 0.875rem;
+    }
 
     .demo-grid {
       display: grid;
@@ -142,7 +149,7 @@
 
       .harmonculus-kits {
         grid-template-columns: minmax(0, 1fr);
-        grid-template-areas: "copy" "screen";
+        grid-template-areas: "copy" "screen" "demos";
         row-gap: 1.5rem;
       }
     }
@@ -155,7 +162,7 @@
   <script defer src="../assets/analytics.js"></script>
   <!-- Shared with the desktop page. Update the integrity hash when publishing changes to vault.js. -->
   <script defer src="https://taype.ruminantaudioworks.com/harmonculus/vault.js"
-          integrity="sha384-dZg33tx4Ku2KAD2cbFMIo18Vvq8mHMCNjLyhDWW6CV4t+M80YGolpWCaoX81zHKg"
+          integrity="sha384-9SZIXMhwxp2EVkdyP6/te/lzIw9lPVJz4XxGyMKFRhKZKMIhbwQb7MauJExAy45q"
           crossorigin="anonymous"></script>
 </head>
 <body>
@@ -264,8 +271,75 @@
         <h2 id="kit-mode-heading">Kit Mode</h2>
         <p>Kit Mode is our love letter to the MPC. In the upcoming update, build a kit across Bank A’s 16 pads and play or sequence it on a single Plugin track. Shape each pad with its own Harmonculus sound, filter, envelopes and effects, then save the whole kit to use again.</p>
         <p>Harmonculus already includes a dedicated library of <strong>365 additional drum and percussion sounds</strong>, from acoustic hits and analogue drum-machine sounds to log drums, reverse cymbals and cinematic taiko.</p>
+        <p>The eight grooves below play factory kits in Kit Mode, from house and trap to samba. Each is mastered lightly with a little EQ and gentle compression, and the samba adds a touch of room.</p>
       </div>
       <img class="harmonculus-screen" src="../assets/harmonculus-mpc-kit.png" width="1280" height="800" loading="lazy" decoding="async" alt="Harmonculus on MPC with Kit Mode on, showing the Bentley Rhythm Ace Circuit Kit across 16 pads and the selected pad’s pitch, tuning, pan, trim, mute group and send controls">
+      <ul class="demo-grid" role="list">
+        <li>
+          <h3 id="kit-demo-london-studio-funk-pocket">London Studio Funk Pocket</h3>
+          <p class="kit-demo-kit">London Studio</p>
+          <audio controls preload="none" aria-labelledby="kit-demo-london-studio-funk-pocket">
+            <source src="https://taype.ruminantaudioworks.com/harmonculus/audio/kits/london-studio-funk-pocket.mp3" type="audio/mpeg">
+            <a href="https://taype.ruminantaudioworks.com/harmonculus/audio/kits/london-studio-funk-pocket.mp3" aria-describedby="kit-demo-london-studio-funk-pocket">Open MP3</a>
+          </audio>
+        </li>
+        <li>
+          <h3 id="kit-demo-dry-machine-house">Dry Machine House</h3>
+          <p class="kit-demo-kit">Dry Machine House Kit</p>
+          <audio controls preload="none" aria-labelledby="kit-demo-dry-machine-house">
+            <source src="https://taype.ruminantaudioworks.com/harmonculus/audio/kits/dry-machine-house.mp3" type="audio/mpeg">
+            <a href="https://taype.ruminantaudioworks.com/harmonculus/audio/kits/dry-machine-house.mp3" aria-describedby="kit-demo-dry-machine-house">Open MP3</a>
+          </audio>
+        </li>
+        <li>
+          <h3 id="kit-demo-log-drum-amapiano">Log Drum Amapiano</h3>
+          <p class="kit-demo-kit">C Bass Log Groove Kit</p>
+          <audio controls preload="none" aria-labelledby="kit-demo-log-drum-amapiano">
+            <source src="https://taype.ruminantaudioworks.com/harmonculus/audio/kits/log-drum-amapiano.mp3" type="audio/mpeg">
+            <a href="https://taype.ruminantaudioworks.com/harmonculus/audio/kits/log-drum-amapiano.mp3" aria-describedby="kit-demo-log-drum-amapiano">Open MP3</a>
+          </audio>
+        </li>
+        <li>
+          <h3 id="kit-demo-sub-kick-trap">Sub Kick Trap</h3>
+          <p class="kit-demo-kit">Sub Kick and Circuit Kit</p>
+          <audio controls preload="none" aria-labelledby="kit-demo-sub-kick-trap">
+            <source src="https://taype.ruminantaudioworks.com/harmonculus/audio/kits/sub-kick-trap.mp3" type="audio/mpeg">
+            <a href="https://taype.ruminantaudioworks.com/harmonculus/audio/kits/sub-kick-trap.mp3" aria-describedby="kit-demo-sub-kick-trap">Open MP3</a>
+          </audio>
+        </li>
+        <li>
+          <h3 id="kit-demo-hand-drum-samba">Hand Drum Samba</h3>
+          <p class="kit-demo-kit">Hand Drum Articulations Kit</p>
+          <audio controls preload="none" aria-labelledby="kit-demo-hand-drum-samba">
+            <source src="https://taype.ruminantaudioworks.com/harmonculus/audio/kits/hand-drum-samba.mp3" type="audio/mpeg">
+            <a href="https://taype.ruminantaudioworks.com/harmonculus/audio/kits/hand-drum-samba.mp3" aria-describedby="kit-demo-hand-drum-samba">Open MP3</a>
+          </audio>
+        </li>
+        <li>
+          <h3 id="kit-demo-rhythm-box-bossa">Rhythm Box Bossa</h3>
+          <p class="kit-demo-kit">Bentley Rhythm Ace Kit</p>
+          <audio controls preload="none" aria-labelledby="kit-demo-rhythm-box-bossa">
+            <source src="https://taype.ruminantaudioworks.com/harmonculus/audio/kits/rhythm-box-bossa.mp3" type="audio/mpeg">
+            <a href="https://taype.ruminantaudioworks.com/harmonculus/audio/kits/rhythm-box-bossa.mp3" aria-describedby="kit-demo-rhythm-box-bossa">Open MP3</a>
+          </audio>
+        </li>
+        <li>
+          <h3 id="kit-demo-dusty-swing">Dusty Swing</h3>
+          <p class="kit-demo-kit">Selmer - Bentley Rhythm Ace Kit</p>
+          <audio controls preload="none" aria-labelledby="kit-demo-dusty-swing">
+            <source src="https://taype.ruminantaudioworks.com/harmonculus/audio/kits/dusty-swing.mp3" type="audio/mpeg">
+            <a href="https://taype.ruminantaudioworks.com/harmonculus/audio/kits/dusty-swing.mp3" aria-describedby="kit-demo-dusty-swing">Open MP3</a>
+          </audio>
+        </li>
+        <li>
+          <h3 id="kit-demo-industrial-metal">Industrial Metal</h3>
+          <p class="kit-demo-kit">Industrial Metal Kit</p>
+          <audio controls preload="none" aria-labelledby="kit-demo-industrial-metal">
+            <source src="https://taype.ruminantaudioworks.com/harmonculus/audio/kits/industrial-metal.mp3" type="audio/mpeg">
+            <a href="https://taype.ruminantaudioworks.com/harmonculus/audio/kits/industrial-metal.mp3" aria-describedby="kit-demo-industrial-metal">Open MP3</a>
+          </audio>
+        </li>
+      </ul>
     </section>
 
     <div class="wrap guide harmonculus-guide" id="installation-guide">
