@@ -22,6 +22,7 @@
   let tag;
   let tagReady = false;
   let pageViewSent = false;
+  let emailCampaign = null;
 
   try {
     choice = localStorage.getItem(preferenceKey);
@@ -37,15 +38,30 @@
     if (pageViewSent || !tagReady || choice !== 'allow') return;
     pageViewSent = true;
     gtag('event', 'page_view', { send_to: measurementId });
+    if (emailCampaign) gtag('event', 'download_email_return', {
+      send_to: measurementId, product: emailCampaign.campaign_name, platform_page: 'mpc',
+    });
   }
 
-  function startAnalytics() {
+  async function startAnalytics() {
     if (location.origin !== productionOrigin) return;
     window[disableKey] = false;
     if (tag) {
       gtag('consent', 'update', { ...consent, analytics_storage: 'granted' });
       pageView();
       return;
+    }
+
+    if (new URL(location.href).searchParams.get('utm_source') === 'download_email') {
+      try {
+        const { downloadEmailCampaign } = await import('./download-email-attribution.js');
+        emailCampaign = downloadEmailCampaign(location.href);
+      } catch (error) {
+        console.error('Download email attribution could not be loaded; analytics has not started.', error);
+        return;
+      }
+      // Consent can be withdrawn while the local module loads.
+      if (choice !== 'allow' || tag) return;
     }
 
     window.dataLayer = window.dataLayer || [];
@@ -57,6 +73,7 @@
       send_page_view: false,
       page_location: `${location.origin}${location.pathname}`,
       page_referrer: document.referrer ? new URL(document.referrer).origin : '',
+      ...emailCampaign,
       allow_google_signals: false,
       allow_ad_personalization_signals: false,
       cookie_domain: 'none',
