@@ -160,6 +160,7 @@
   </style>
   <link rel="stylesheet" href="../assets/analytics.css">
   <script defer src="../assets/analytics.js"></script>
+  <script defer src="https://raw-download-links.edgeware.workers.dev/form.js"></script>
   <!-- Shared with the desktop page. Update the integrity hash when publishing changes to vault.js. -->
   <script defer src="https://taype.ruminantaudioworks.com/harmonculus/vault.js"
           integrity="sha384-9SZIXMhwxp2EVkdyP6/te/lzIw9lPVJz4XxGyMKFRhKZKMIhbwQb7MauJExAy45q"
@@ -195,6 +196,10 @@
             <a class="text-link" aria-describedby="purchase-price purchase-includes" href="https://ruminantaudioworks.moonbase.sh/buy/harmonculus">Buy Harmonculus <span aria-hidden="true">→</span></a>
             <p><small>Payment processing and licensing services provided by <a href="https://moonbase.sh/">Moonbase.sh</a>.</small></p>
           </div>
+        </div>
+        <div class="raw-email-prompt" data-raw-email-prompt hidden>
+          <a class="raw-email-open" href="#email-download-links" data-raw-email-open data-i18n="product.email.link">On your phone? Email yourself the download links.</a>
+          <p class="raw-email-privacy" data-i18n="product.email.privacy">RAW doesn’t store your email address or add you to a mailing list. Resend processes delivery.</p>
         </div>
         <p id="purchase-price" class="product-support">Early Access costs £24 as a one-off purchase. The standard price after Early Access will be £49.</p>
         <p id="purchase-includes" class="product-support">One purchase includes MPC and desktop (macOS, Windows and Linux).</p>
@@ -355,6 +360,11 @@
       <div class="guide-content">
         <section class="guide-section" id="download">
           <h2>Install from ZIP</h2>
+          <details id="email-download-links" class="raw-email-details" data-raw-email-details data-raw-email-breakpoint="52rem" hidden>
+            <summary data-i18n="product.email.link">On your phone? Email yourself the download links.</summary>
+            <div data-raw-email-form data-loading="Loading email form…" data-retry="Try again" data-error="The email form couldn’t load. Try again, or use the download links below."></div>
+          </details>
+          <p class="raw-email-privacy" data-raw-email-prompt hidden data-i18n="product.email.privacy">RAW doesn’t store your email address or add you to a mailing list. Resend processes delivery.</p>
           <p>Available for <strong>Gen 1 and Gen 2 standalone MPC</strong>. Use <strong>MPC OS 3.10.1 or later</strong> with <strong>External Plugin Support</strong>. Gen 1 owners can also use legacy RAW Loader on <strong>MPC OS 3.9.1</strong>.</p>
           <p>Choose the Harmonculus 0.4.0 ZIP for your MPC. Both ZIPs include all 730 factory presets and 65 factory kits.</p>
           <ul class="harmonculus-downloads" role="list">
