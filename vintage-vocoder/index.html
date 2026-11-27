@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="../styles.css">
   <link rel="stylesheet" href="../assets/analytics.css">
   <script defer src="../assets/analytics.js"></script>
+  <script defer src="https://raw-download-links.edgeware.workers.dev/form.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -48,6 +49,10 @@
         <a class="primary-link" href="#download">Install on MPC <span aria-hidden="true">↓</span></a>
         <a class="text-link" href="https://taype.ruminantaudioworks.com/vintage-vocoder/">Vintage Vocoder for desktop <span aria-hidden="true">→</span></a>
       </div>
+      <div class="raw-email-prompt" data-raw-email-prompt lang="en-GB" hidden>
+        <a class="raw-email-open" href="#email-download-links" data-raw-email-open>On your phone? Email yourself the download links.</a>
+        <p class="raw-email-privacy">RAW will not store your email address or add you to a mailing list.</p>
+      </div>
     </header>
     <nav class="guide-contents" aria-labelledby="contents-title">
       <p class="eyebrow" id="contents-title">Contents</p>
@@ -62,6 +67,11 @@
     <div class="guide-content">
       <section class="guide-section" id="download">
         <h2>Download and install</h2>
+        <details id="email-download-links" class="raw-email-details" data-raw-email-details data-raw-email-product="vintage-vocoder" data-raw-email-breakpoint="48rem" lang="en-GB" hidden>
+        <summary>On your phone? Email yourself the download links.</summary>
+        <div data-raw-email-form data-loading="Loading email form…" data-retry="Try again" data-error="The email form couldn’t load. Try again, or use the download links below."></div>
+      </details>
+      <p class="raw-email-privacy" data-raw-email-prompt lang="en-GB" hidden>RAW will not store your email address or add you to a mailing list.</p>
         <h3>Install on your MPC (recommended)</h3>
         <p>If you’re setting up the loader for the first time, use <strong>RAW MPC USB Creator</strong> on your Mac or Windows PC to prepare a USB stick. <a href="../#loader">Download USB Creator</a> · <a href="../docs/">Set up the loader for your MPC OS version</a></p>
         <p><strong>Connect your MPC to the internet for the install.</strong> Open <strong>RAW MPC Plugin Loader</strong>, choose <strong>RAW Catalogue</strong> and install <strong>Vintage Vocoder FX</strong>. To play the vocoder with MIDI on MPC OS 3.10.1 or later, also install <strong>Vintage Vocoder Sender</strong>. You can use both plugins offline once they’re installed.</p>

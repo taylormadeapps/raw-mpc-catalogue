@@ -25,6 +25,7 @@
   <link rel="stylesheet" href="./styles.css?v=catalogue">
   <link rel="stylesheet" href="./assets/analytics.css">
   <script defer src="./assets/analytics.js"></script>
+  <script defer src="https://raw-download-links.edgeware.workers.dev/form.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -45,6 +46,10 @@
       <h1 id="title">MPC Plugin<br>Loader</h1>
       <p class="intro-copy">Install plugins directly on your standalone MPC, online or from a USB stick.</p>
       <a class="primary-link" href="#loader">Get the loader <span aria-hidden="true">↓</span></a>
+      <div class="raw-email-prompt" data-raw-email-prompt lang="en-GB" hidden>
+        <a class="raw-email-open" href="#email-download-links" data-raw-email-open>On your phone? Email yourself the download links.</a>
+        <p class="raw-email-privacy">RAW will not store your email address or add you to a mailing list.</p>
+      </div>
     </section>
 
     <div class="release-list">
@@ -53,6 +58,11 @@
         <div>
           <h2 id="loader-title">MPC Plugin Loader</h2>
           <p>Follow the setup guide for your MPC OS version.</p>
+          <details id="email-download-links" class="raw-email-details" data-raw-email-details data-raw-email-product="mpc-loader" data-raw-email-breakpoint="42rem" lang="en-GB" hidden>
+        <summary>On your phone? Email yourself the download links.</summary>
+        <div data-raw-email-form data-loading="Loading email form…" data-retry="Try again" data-error="The email form couldn’t load. Try again, or use the download links below."></div>
+      </details>
+      <p class="raw-email-privacy" data-raw-email-prompt lang="en-GB" hidden>RAW will not store your email address or add you to a mailing list.</p>
           <ul class="loader-guides">
             <li><a href="./docs/legacy.html">3.9.1 and earlier</a> · USB install prompt on Gen 1</li>
             <li>
